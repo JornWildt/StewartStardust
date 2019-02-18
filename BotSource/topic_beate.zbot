@@ -1,0 +1,31 @@
+﻿> *
+!weight 0.5
+! start_topic beate
+! continue
+
+> * niece *
+! weight 2
+: Beate?
+! start_topic beate
+
+> * beate *
+! weight 2
+: Min niece?
+! start_topic beate
+
+
+! topic beate
+{
+  T> En gang ringede strømerne sgu!
+  +: "Om jeg kender Beate? Ja gu' gør jo så"
+  +: Hun er sgu' da min niece.
+
+  T> Du ved - mit og Beates forhold er baseret på kærlighed!
+  +: Og forståelse. Og gensidig fransk. Yessir!
+
+  T> Skjål!
+  +: DET BARE GAAAZZZZZ!
+  +: Du ka jo tag det mand!
+
+  T> Og så det dig, lækkermås
+}

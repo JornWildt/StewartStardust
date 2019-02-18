@@ -1,0 +1,103 @@
+﻿>> hvad_hvem_er (emne)
+>> kendt_ord (emne)
+# Lookup any RDF data available
+! repeatable
+! call RDF.Query("
+SELECT ?name ?typeName ?intro ?typeEr ?topic
+WHERE
+{
+  ?subj zp:knownby ?emne.
+  ?subj rdfs:label ?name.
+  ?subj rdf:type ?type.
+  OPTIONAL {?subj zp:intro ?intro}
+  OPTIONAL {?type rdfs:label ?typeName}
+  OPTIONAL {?type zp:er ?typeEr}
+  OPTIONAL {?subj zp:topic ?topic}
+  FILTER (?emne = lcase(@emne))
+}
+ORDER BY RAND()
+LIMIT 1
+")
+# If the result has a topic associated to it, then try to set that as the current chat topic
+! call RDF.TrySetTopic($_, "topic")
+: <result:{r |<if(r.intro)><r.intro><elseif(r.typeEr)><r.name; format="UF"> <r.typeEr><elseif(r.typeName)><r.name>: <r.typeName>.<endif>}>
+{empty}: Hvad fanden ved jeg om <emne>
+{empty}: Det rager ikke dig.
+
+
+>> hvad_hvem_er
+! repeatable
+: Tror du jeg ved det måske?
+: Sig mig ligner jeg et leksikon? Eller ved du heller ikke hvad det er - hva?
+
+
+>> hvilke_kender_du (emne)
+! repeatable
+! call RDF.Query("
+SELECT ?name
+WHERE
+{
+  ?subj rdf:type ?type.
+  ?subj rdfs:label ?name.
+  ?type rdf:type rdfs:Class.
+  ?type zp:knownby ?emne
+  FILTER (?emne = lcase(@emne))
+}
+ORDER BY RAND()
+LIMIT 5
+")
+:Det kunne sgu da godt være <result:{r | <r.name>};separator=", ">
+{empty}: Ikke en daddel mand
+{empty}: Ska du værre fræk?
+
+>> hvilke_kender_du
+! repeatable
+: Det er sgu' da for åndsvagt.
+: Skal vi ikke hellere tage en bajer.
+
+
+
+###########################
+
+# hvad spiser mus
+>> spm_attr_subj (attr:verb, subj:subst)
+>> spm_attr_subj (attr:adj, subj:subst)
+>> spm_attr_subj (attr:subst, subj:subst)
+! repeatable
+! call RDF.Single("
+SELECT ?subj ?svar ?attr ?egenskab ?svar_tekst ?svar_simpel ?topic
+WHERE
+{
+  ?subj zp:knownby ?subj_txt.
+  ?attr zp:knownby ?attr_txt.
+  OPTIONAL {
+    ?attr zp:egenskab ?egenskab.
+    ?subj ?egenskab ?subj_egenskab.
+    ?subj_egenskab rdfs:label ?svar
+  }
+  OPTIONAL {
+    ?attr zp:egenskab_simpel ?egenskab_simpel.
+    ?subj ?egenskab_simpel ?svar_simpel.
+  }
+  OPTIONAL {
+    ?attr zp:egenskab_tekst ?egenskab_tekst.
+    ?subj ?egenskab_tekst ?svar_tekst.
+  }
+  OPTIONAL {?subj zp:topic ?topic}
+  FILTER (?subj_txt = lcase(@subj))
+  FILTER (?attr_txt = lcase(@attr))
+}
+ORDER BY RAND()
+LIMIT 1
+")
+# If the result has a topic associated to it, then try to set that as the current chat topic
+! call RDF.TrySetTopic($_, "topic")
+: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"> vil jeg mene?<else>Hmmm...<endif>
+: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"><else>Tjah?<endif>
+: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)>Skulle det mon v�re <svar>?<else>�hm...<endif>
+{empty}: Fårk man - nu sejler det sgu da.
+
+>> { intent = spm_attr_subj }
+! repeatable
+: øh ...
+: hvad?

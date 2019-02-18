@@ -1,0 +1,10 @@
+﻿>> hjælp
+: Og hvorfor så det? Hvad er der nu galt?
+! answer
+{
+  > *
+  ! weight 0.8
+  : Ja, så siger vi det. Hvar der andet - eller skal du have ryddet gebisset?
+  : Du gør det sgu' da også helt forkert.
+  : Slap af - prøv igen.
+}

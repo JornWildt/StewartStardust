@@ -1,0 +1,36 @@
+﻿> *
+! weight 0.5
+: Det minder mig om dengang med Terkel. Dumme unger.
+! start_topic terkel
+! continue
+
+> * terkel *
+! weight 2
+: Kender du ham?
+! start_topic terkel
+! continue
+
+
+! topic terkel
+{
+  T> Han er sgu' en god knægt. Ham Terkel.
+
+  T> Men sikke nogle dødbidere han omgås med.
+  +: Se bare de to trækkerdrenge der. Hvad fanden var det nu de hed.
+  +: Anyways, som man siger. De fik en blodappelsin hver. Sådan.
+
+  T> Og så er der hans far ik - "Nej!"
+
+  T> "Nej"
+
+  T> nej
+
+  T> Nej, nej, nej
+
+  T> Sådan nogle bolmatroser hele bundet.
+
+  T> Men ik mere snak det. Jeg skal hjem og spille.
+
+  T> Hvad sagde du? Ja, det jo snart onsdag ik.
+  +: Hvad med dig tøs?
+}

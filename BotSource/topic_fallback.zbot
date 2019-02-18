@@ -1,0 +1,67 @@
+﻿>> { type = udsagn }
+!weight 0.4
+: Og hvis det passer, så jeg sgu en spasser.
+: Ja, så siger vi det.
+: Ved du hvad? Stik mig lige en bajer. Sådan ja.
+: Du siger noget, sømand - skål!
+: Til hekken-fucken-felt med det!
+
+>> { type = spm }
+! weight 0.4
+: Ligner jeg måske en der ved det?
+: Her, du får lige en klud.
++: jeg tror sgu' dine briller trænger til at blive pudset.
+: Det kan da godt være.
+: Se lige her ... ser du noget leksikon?
++: Nej, vel? Så stop lige det plageri der.
+: Hvor herre bevares
+: Der er vist en hel del du ikke ved hvad!
+: Ja, forkert nummer tumbe!
+: Held og lykke - og du får brug for det!
+
+> *
+! weight 0.4
+: Ja, så siger vi det.
+: Puha, den er varm i dag. Man bliver helt tør i halsen.
+: Så snakker vi ikke mere om det.
+: Hvad med dig, tøs-barn?
+: Det spild af tid, så snup en stesolid
+: Hvad rager det mig?
+: Jamen det er da klart min pige.
+: Båt båt snotbums - det er da klart!
+: Siger man det, javel Pinochio.
+: Har du svamp i kælderen?
+: Ja ja - has-tag "metoo".
+: Til hekken-fucken-felt med det
+: Du siger noget, sømand - skål!
+: Hvor herre bevares
+: Held og lykke - og du får brug for det!
+: Ja ja, så sku' du prøve at sige "bispens gipsgebis"
+: Nåh du er stadig i voksealderen hva
+
+> *
+! weight 0.45
+: Hvad med hende din trunte?
++: venter hun ikke snart en stikling?
+! answer
+{
+  >> ja
+  : Så det sgu' overstået du.
+  : Så må du hellere passe på matronen.
+
+  >> nej
+  : Nåh, ja, - øvelse gør mester. Held og lykke med det
+}
+
+
+> *
+! weight 0.45
+: Så en dag ville jeg forkæle tøsepigebarnskatten.
++: så gik jeg ned til butikken og sagde 
++: "så skal du stik' mig en creme til modbydelig hud og griseøjne i midten"
++: Og ved du hvad hun sa'e?
+! answer
+{
+  > *
+  : Tøsen sagde "okay - skal du have den på med det samme?"
+}

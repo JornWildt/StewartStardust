@@ -1,0 +1,28 @@
+﻿! topic den_ku_misses
+[
+  > * den *
+  > * (største|størst|trang|snæver|klodser|kom|stang|bæver|bæveren|stilk|stilken|misses|fyr) *
+  : Det sagde hun også igår!
+]
+{
+  T> Du ve' jeg den største
+  +: det sagde hun også igår
+
+  T> Jeg kom som den første ...
+  +: det sagde hun også igår
+
+  T> Men der er mere på vej ...
+  +: det sagde hun også igår
+
+  T> Så er vi i gang ...
+  +: det sagde hun også igår
+
+  T> Og pladsen er trang ...
+  +: det sagde hun også igår
+
+  T> Jeg er så sulten så jeg ku spise en bæver
+  +: ...
+
+  T> Skal vi ikke hjem og lege med mine klodser ...  
+  +: Den ku misses!
+}

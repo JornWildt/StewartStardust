@@ -1,0 +1,9 @@
+﻿! pattern (intent = jeg_har_et_problem, type = udsagn)
+{
+  > jeg har et problem
+  > jeg er på skideren
+  > nu hænger jeg på den
+  > jeg kan ikke klare det
+  > det sejler bare for mig
+  > det går ad helvedes til
+}

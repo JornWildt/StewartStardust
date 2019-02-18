@@ -1,0 +1,68 @@
+﻿! define (type)
+{
+  grundstof:
+    er: "er et grundstof.";
+    intro: "Et grundstof er et kemisk stof som udelukkende består af én slags atomer - fx jern eller brint.\n+Bacon er fx en slags grundstof i maden ;-)".
+}
+
+! define (grundstof, materiale, subst)
+{
+  hydrogen (brint):.
+  helium:.
+  carbon (karbon, kul):.
+  nitrogen:.
+  oxygen:.
+  fluor:.
+  neon:.
+  fosfor (phosphor):.
+  svovl:.
+  klor:.
+  argon:.
+  calcium:.
+  scandium:.
+  titan:.
+  vanadium:.
+  krom:.
+  mangan:.
+  silicium:.
+}
+
+! define (grundstof, metal, materiale, subst)
+{
+  kalium:.
+  lithium:.
+  natrium:.
+  jern:
+    atomnummer: 26;
+    massefylde: 7.7;
+    smeltepunkt: 1538;
+    vægt_tekst: "Jern er tungt";
+    intro: "Jern er et stærk materiale som bruges til værktøj, byggekonstruktioner og meget mere".
+  Magnesium:.
+  aluminium:.
+  nikkel:.
+  kobber:.
+  zink:.
+  sølv:
+    pris_tekst: "Sølv koster ikke mere end en daler pr. gram.".
+  tin:.
+  platin (platinium):.
+  guld (guldet):
+    atomnummer: 79;
+    massefylde: 19.3;
+    smeltepunkt: 1064;
+    vægt_tekst: "Guld er ganske tungt";
+    anvendelse: "Guld bruges til smykker, betalingsmiddel, elektronik og meget andet";
+    intro: "Guld - dyrt som bare pokker og smukt som intet andet.";
+    pris_tekst: "Guld er dyrt - meget dyrt!\n+Vel omkring nogle hundrede kroner pr. gram.".
+  kviksølv:.
+  bly:
+    atomnummer: 82;
+    massefylde: 11.3;
+    smeltepunkt: 328;
+    vægt_tekst: "Bly er tungt";
+    anvendelse: "Bly bruges blandt andet i bilbatterier.";
+    intro: "Bly er et blødt metal.\n+Det er forøvrigt også giftigt.".
+  kobolt:.
+  uran:.
+}

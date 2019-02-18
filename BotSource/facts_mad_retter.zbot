@@ -1,0 +1,108 @@
+﻿! define (type, subst)
+{
+  mad_ret (ret):
+    er: "er noget man spiser.".
+  opskrift:
+    er: "er en beskrivelse af hvordan man fremstiller noget - fx et måltid mad.".
+  hovedret:
+    er: "er den vigtigste del af et måltid.".
+  kage:
+    er: "er sødt bagværk.".
+  dessert:
+    er: "er en noget vi spiser efter hovedretten. Typisk noget sødt og lækkert.".
+}
+
+
+! define (spiselig, madvare, mad_ret, opskrift, morgenmad)
+{
+  "havregrød" (havregrøden):.
+}
+
+
+! define (spiselig, madvare, mad_ret, pålæg, frokost)
+{
+  "leverpostej" (leverpostejen):.
+  "spegepølse" (spegepølsen, spegepølser, spegepølserne):.
+  "hønsesalat" (hønsesalaten):.
+  "skinkesalat" (skinkesalaten):.
+  "filet":.
+}
+
+! define (spiselig, madvare, mad_ret, opskrift, hovedret)
+{
+  "risengrød" (risengrøden):
+    intro: "Risengrød er dejlig grød lavet af mælk og ris. Grøden *skal* serveres med kanelsukker og smør.";
+    opskrift: "Hæld 1 liter mælk og 2½ dl grød i en gryder, og kog det i cirka 45 min. indtil risene er møre";
+    ingrediens: <ris>, <mælk>.
+  "pizza" (pizzaen, pizzaer, pizzaerne):
+    intro: "Pizza er et fladt rundt brød med forskellige slags toppings ovenpå.";
+    opskrift: "Bland en dej af mel, vand og gær. Lad den hæve lidt. Rul derefter ud på en bageplade, hæld tomatsovs over og drys fyldet ovenpå. Slut af med et godt drys ost.";
+    ingrediens: <mel>, <vand>, <gær>, <salt>, <tomat>, <skinke>, <ost>.
+  "frikadelle" (frikadellen, frikadeller, frikadellerne):.
+  "Frikadeller med kartofler og persillesovs":.
+  "Hakkebøf med brun sovs" ("Hakkebøf med løg", "Hakkebøf med brun sovs og kartofler", "Hakkebøf med sovs"):.
+  "Stegt rødspætte":.
+  "Kylling i karry":.
+  "Æggekage":.
+  "Gallasch":.
+  "Kalvetunge med peberrodssovs":.
+  "Gule ærter":.
+  "kalvelever med bløde løg og agurkesalat":.
+  "Bøf Stroganof":.
+  "Grønkålssuppe":.
+  "Benløse fugle":.
+  "Stegte sild" ("stegt sild"):.
+  "Æbleflæsk":.
+  "Pariserbøf":.
+  "Millionbøf":.
+  "Bøf Lindstrøm":.
+  "Medister med kartofler" ("Medisterpølse med kartofler"):.
+  "Kalvefrikassé" (Kalvefrikasse):.
+  "Skipperlapsskovs":.
+  "Boller i karry":.
+  "Stegt flæsk med persillesovs":.
+  "fiskefilet" (fiskefiletten, fiskefiletter, fiskefeltterne):.
+  "Svensk pølseret":
+    opskrift: "Hak løgene og svits dem i en gryde i smørret, til de er gyldne. Skær pølserne i skrå skiver. Skær kartofler i skiver. Svits pølserne med og drys paprika over. Bland det og skru ned til middel varme. Tilsæt tomatpuré, mælk, salt og peber. Kom kartoflerne i gryden og vend det forsigtigt, så kartoffelskiverne ikke går i stykker. Varm retten i ca. 5 minutter ved jævn varme, tilsæt fløde, smag til og server med klippet purløg.";
+    ingrediens: <løg>, <margarine>, <wienerpølse>, <kartoffel>, <paprika>, <tomatpuré>, <ketchup>, <letmælk>, <salt>, <peber>, <fløde>, <purløg>.
+  "Forloren hare":.
+  "Pasta med kødsovs" ("Pasta bolognese", Bolognese, "Spaghetti med kødsovs"):.
+  "tortillas med oksekød" ("mexikanske pandekager med oksekød"):.
+  "Grønlangkål" (grønlangkålen):.
+}
+
+
+! define (spiselig, madvare, mad_ret, opskrift, dessert)
+{
+  "kærnemælkskoldskål" (kærnemælkskoldskålen, koldskål, koldskålen):.
+  "is" (isen, isene):.
+  "chokoladeis" (chokoladeisen, chokoladeisene):.
+  "vanilleis" (vanilleisen, vanilleisene):.
+  "jordbæris" (jordbærisen, jordbærisene):.
+  "nougatis" (nougatisen, nougatisene):.
+}
+
+
+! define (spiselig, madvare, mad_ret, opskrift, dessert, kage, bagværk)
+{
+  "lagkage" (lagkagen, lagkager, lagkagerne):.
+  "flødeskumskage" (flødeskumskagen, flødeskumskager, flødeskumskagerne):.
+  "jordbærkage" (jordbærkagen, jordbærkager, jordbærkagerne):.
+  "napoleonskage" (napoleonskagen, napoleonskager, napoleonskagerne):.
+  "kransekage" (kransekagen, kransekager, kransekagerne):.
+  "sandkage" (sandkagen, sandkager, sandkagerne):.
+  "chokoladekage" (chokoladekagen, chokoladekager, chokoladekagerne):.
+  "gulerodskage" (gulerodskagen, gulerodskager, gulerodskagerne):.
+  "kage" (kagen, kager, kagerne):.
+}
+
+! define (spiselig, madvare, brød, bagværk)
+{
+  "rugbrød" (rugbrødet):.
+  "franskbrød" ("fransk brød"):.
+  "tortillas":.
+  "boller" (bolle, bollen, bollerne):.
+  "sandwichbrød":.
+  "burgerboller" (burgerbollen, burgerboller, burgerbollerne):.
+  "knækbrød" (knækbrødet):.
+}

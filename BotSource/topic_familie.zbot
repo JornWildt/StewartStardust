@@ -1,0 +1,31 @@
+﻿> * (far|mor) *
+: Okay, hvad er der nu galt?
+: Javel. Og hvordan har du det så med dine forældre?
+: Ja ja. Man bestemmer jo ik sæl sin familie.
++: Fortæl noget mere om <2>
+
+> * (far|mor) *
+: Ved du hvad? du havde garanteret et forhold til din mor
+! start_topic familie
+
+> * vivian *
+! weight 2
+: Hun er på stesolid.
++: Laver ikke en skid.
++: "Gå væææææk!"
++: Den grimme sæk.
+! start_topic familie
+
+! topic familie
+{
+  T> Det er sgu' ikke som dengang far her var dreng.
+  +: Der var ingen kære mor. 
+  +: Det var fandme nemmere at få hunden til at hente smøger end at få stodderen ud af sengen.
+
+  T> Far var ikke en skid bedre.
+  +: "Hvad er klokken?" sagde han.
+  +: "Så er det sengtid du!".
+  +: Jo .. - han syntes jo det var pis-hygligt.
+  +: "Du ka sgu' da bare tage en pude med i skole i morgen!"
+  +: Så snakkede vi ikke mere om det.
+}

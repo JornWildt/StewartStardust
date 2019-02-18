@@ -1,0 +1,13 @@
+﻿! define (type)
+{
+  verb (verbum, verber, udsagnsord):
+    er: "er et udsagnsord.";
+    intro: "Et verbum - eller udsagnsord - er et ord som udtrykker en handling.".
+  subst (substantiv, navneord):
+    er: "er et navneord.";
+    intro: "Et substantiv - eller navneord - er et ord som betegner en genstand, væsen eller abstraktion.".
+  adj (adjektiv, tillægsord):
+    er: "er et tillægsord";
+    intro: "Et adjektiv - eller tillægsord - er et ord som beskriver andre koncepter.".
+}
+

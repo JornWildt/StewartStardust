@@ -1,0 +1,33 @@
+﻿> *
+! weight 0.5
+: Ved du hvad jeg trænger til?
+! answer
+{
+  >> ja
+  : Nåh, det tror du nok du ved?
+  : Yes, det er der frækkertalt.
+  ! start_topic trænger_til
+
+  >> nej
+  : Så lad mig fortælle dig ...
+  ! start_topic trænger_til
+
+  > *
+  : Nåh, tag det nu ik' så tungt knægt. Kom - lad os gå ind og tæve din far!
+  ! start_topic trænger_til
+}
+
+! topic trænger_til
+{
+  T> Jeg kun trænge til en tim og tomme med knust is.
+
+  T> ... at baker-ekspeditrunten gad at lære at sige "cream cheese".
+
+  T> Jeg ku' trænge til en fedtsugning
+  +: og en japanstang
+  +: og så en fedtsugning mere!
+
+  T> Jeg ku trænge til en knallert, der blir stående hvor den plejer at stå.
+
+  T> Kom så Pinochio - din tur!
+}

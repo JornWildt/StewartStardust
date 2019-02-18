@@ -1,0 +1,88 @@
+﻿! pattern (intent = hjælp, type = spm)
+{
+  > jeg har brug for hjælp
+  > hjælp
+  > hjælp mig
+  > hvad skal jeg gøre
+  > hvad nu
+  > hvordan kommer jeg videre
+}
+
+
+! pattern (intent = hilsen, type = udsagn)
+{
+  > %hilsen
+  > %hilsen {navn}
+}
+
+! pattern (intent = farvel, type = udsagn)
+{
+  > farvel
+  > farvel {navn}
+  > vi ses
+  > auf wienerschnitzel
+  > godnat
+  > sov godt
+}
+
+! pattern (intent = fornærme, type = udsagn, holdning = neg)
+{
+  > %idiot
+  > din %idiot
+  > dit %idiot
+  > fuck dig
+  > skråt op
+  > jeg hader dig
+  > dø
+  > kæft
+  > hold kæft
+}
+
+! pattern (intent = advare, type = udsagn, holdning = neg)
+{
+  > så er det godt
+  > pas lige på
+  > det gør du ikke igen
+}
+
+
+! pattern (intent = jeg_hedder, type = udsagn)
+{
+  > jeg hedder ~ikke {navn}
+  > mit navn er ~ikke {navn}
+}
+
+! pattern (intent = x_findes, type = udsagn)
+{
+  > {emne} findes
+  > der findes {emne}
+  > {emne} eksisterer
+}
+
+! pattern (intent = sig_noget_sjovt)
+{
+  > sig noget sjovt
+  > fortæl en %joke
+  > giver du en %joke
+  > kan du en vittighed
+}
+
+! pattern (intent = kendt_ord, type = udsagn)
+{
+  > {emne}
+}
+
+! pattern (intent = test, type = udsagn)
+{
+  > test
+  > tester
+  > dette er en prøve
+  > dette er en test
+  > Har du noget til denne
+  > hvad siger du til det her
+  > kender du denne
+  > hvad med det her
+  > hvad med dette
+  > forstår du det her
+  > forstår du hvad jeg siger
+}

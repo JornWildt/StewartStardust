@@ -1,0 +1,24 @@
+﻿! define (verb)
+{
+  drikke (drikker, drak, drik, drikkes):.
+  spise (spiser, spiste, spis, spises):
+    egenskab: <zp:føde>;
+    egenskab_tekst: <zp:føde_tekst>.
+  løbe (løber, løb, løb, løbes):
+    egenskab_simpel: hastighed;
+    egenskab_tekst: <zp:hastighed_tekst>.
+  veje (vejer, vejede, vej, vejes):
+    egenskab_simpel: <zp:vægt>;
+    egenskab_simpel: <zp:massefylde>;
+    egenskab_tekst: <zp:vægt_tekst>.
+  fylde (fylder, fyldte, fyld, fyldes):
+    egenskab_simpel: <zp:volume>;
+    egenskab_tekst: <zp:volume_tekst>.
+  koste (koster, kostede):
+    egenskab_simpel: <zp:pris>;
+    egenskab_tekst: <zp:pris_tekst>.
+  bruge (bruger, brugte, brug, bruges):
+    egenskab_tekst: <zp:anvendelse>.
+  køre (kører, kørte, kør, køres):.
+  gå (går, gik, gå):.
+}

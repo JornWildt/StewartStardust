@@ -1,0 +1,10 @@
+﻿! define (type)
+{
+  materiale:
+    er: "er et materiale".
+}
+
+! define (materiale)
+{
+  beton (betonen):.
+}

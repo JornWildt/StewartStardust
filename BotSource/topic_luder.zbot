@@ -1,0 +1,43 @@
+﻿> *
+! weight 0.5
+: Nåh, jamen så giver jeg en luder.
++: Hvad siger du til det?
+! answer
+{
+  > * tai *
+  : Nåh, det kender du godt?
+  ! start_topic luder
+
+  >> nej
+  : Bevares!
+
+  >> ja
+  : okay - kom så tøs-barn
+  ! start_topic luder
+  ! continue
+
+  >> tak
+  : Klap lige hesten makker. Tror du jeg mente det alvorligt, hva?
+  +: lidderkarl
+  ! start_topic luder
+
+  > *
+  ! weight 0.8
+  : Så må du sku' bare gå hjem og pryle aben
+  +: nå ja, eller stryge bævern, hvis du forstår ...
+}
+
+
+! topic luder
+{
+  T> På en luderbar i Shanghai jeg fandt mig en tøs
+
+  T> Smuk som drøm kan du tro.
+
+  T> Men da jeg stak hånden i jorden, var der sgu' en pølse i beddet!
+
+  T> Jeg mente ikke jeg havde bestilt en pølse i svøb
+  +: Men hvad fa'en jeg havde jo betalt ...
+
+  T> Ja, så er det tid til en porter.
+}

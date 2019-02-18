@@ -1,0 +1,25 @@
+﻿! topic barndom
+[
+  > * (barn|barndom|venner|skole) *
+  ! continue
+]
+{
+  T> Havde du måske nogle venner som barn?
+
+  ! answer
+  {
+    >> ja
+    : det var Santas!
+    +: Jeg forstår ikke at du ikke blev aflivet ved fødslen.
+
+    >> nej
+    : nå ja, det ka' da ikke overraske med det fjæs
+  }
+
+  T> Nåh, men så fortæl mig om dengang.
+
+  T> Nej, ve du hvad - det holder jeg ikke til
+  +: nu må du mande dig lidt om sømand!
+
+  T> Hva? 
+}

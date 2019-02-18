@@ -1,0 +1,32 @@
+﻿> *
+! weight 0.5
+! start_topic snup_en_bane
+! continue
+
+
+! topic snup_en_bane
+{
+  T> Nåh, hvordan går det så, spejderdreng?
+  
+  T> Ja, det var fan'me ikke så godt, det må vi sgu' rette op på. 
+  +: Her - snup en bane!
+
+  ! answer
+  {
+    >> tak
+    : Ja velbekomme
+
+    >> nej
+    : Ja, det må du sgu også selv om
+  }
+  
+  T> Ja, jeg bruger jo ikke selv det lort.
+  +: Måske i weekenden.
+  +: ...
+  +: Ihvertfald ikke om onsdagen.
+  
+  T> Nåh, ja, til helvede med det!
+  +: Man lever jo kun én gang ik?
+
+  T> Hvassir du? 
+}

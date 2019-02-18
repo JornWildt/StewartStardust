@@ -1,0 +1,27 @@
+﻿! define (type, subst)
+{
+  sprog:
+    er: "er et sprog.".
+}
+
+! define (sprog)
+{
+  dansk:.
+  norsk:.
+  svensk:.
+  islandsk:.
+  grønlandsk:.
+  tysk:.
+  engelsk:.
+  skotsk:.
+  walisisk:.
+  fransk:.
+  polsk:.
+  hollandsk:.
+  italiensk:.
+  spansk:.
+  portugesisk:. 
+  belgisk:.
+  russisk:.
+  kinesisk:.  
+}

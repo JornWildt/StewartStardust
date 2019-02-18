@@ -1,0 +1,66 @@
+! define (type, subst)
+{
+  insekt:
+    er: "er et insekt".
+}
+
+
+! define (dyr, insekt, subst)
+{
+  "skorpion" (skorpionen):
+    dyreklasse: insekt.
+
+  "edderkop" (edderkoppen, edderkopper, edderkopperne):
+    dyreklasse: insekt.
+
+  "sommerfugl" (sommerfuglen, sommerfugle, sommerfuglene):
+    dyreklasse: insekt.
+
+  "flue" (fluen, fluer, fluerne, spyflue, spyfluen):
+    dyreklasse: insekt.
+
+  "gedehams" (gedehamsen, gedehamse, gedehamsene, hveps, hvepsen, hvepse, hvepsene):
+    dyreklasse: insekt.
+
+  "bi" (bien, bier, bierne, honningbi, honningbien, honningbier):
+    dyreklasse: insekt.
+
+  "myg" (myggen, myggene):
+    dyreklasse: insekt.
+
+  "bille" (billen, biller, billerne):
+    dyreklasse: insekt.
+
+  "ørentvist" (ørentvisten, ørentviste, ørentvistene):
+    dyreklasse: insekt.
+
+  "kakerlak" (kakerlakken, kakerlakker, kakerlakkerne):
+    dyreklasse: insekt.
+
+  "myre" (myren, myrer, myrerne):
+    dyreklasse: insekt.
+
+  "sommerfugl" (sommerfuglen, sommerfugle, sommerfuglene):
+    dyreklasse: insekt.
+
+  "guldsmed" (guldsmeden, guldsmede, guldsmedene):
+    dyreklasse: insekt.
+    
+  "græshoppe" (græshoppen, græshopper, græshopperne):
+    dyreklasse: insekt.
+    
+  "lus" (lusen, lusene):
+    dyreklasse: insekt.
+    
+  "loppe" (loppen, lopper, lopperne):
+    dyreklasse: insekt.
+    
+  "snegl" (sneglen, snegle, sneglene):
+    dyreklasse: insekt.
+    
+  "tusindben" (tusindbenet, tusindbenene):
+    dyreklasse: insekt.
+    
+  "skolopender" (skolopenderen, skolopendre, skolopendrene):
+    dyreklasse: insekt.
+}

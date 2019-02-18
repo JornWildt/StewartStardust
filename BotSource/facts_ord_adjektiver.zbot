@@ -1,0 +1,10 @@
+﻿! define (adj)
+{
+  tung (tungere, tungest, tungt):
+    egenskab_simpel: <zp:vægt>;
+    egenskab_simpel: <zp:massefylde>;
+    egenskab_tekst: <zp:vægt_tekst>.
+  dyrt (dyrere, dyrest, dyr):
+    egenskab_simpel: <zp:pris>;
+    egenskab_tekst: <zp:pris_tekst>.
+}

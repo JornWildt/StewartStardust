@@ -1,0 +1,32 @@
+﻿! topic er_du_sulten
+[
+  > *
+  ! weight 0.5
+  : Ved du hvad?
+  +: I går så jeg nogen fra Afganistan der spiser fåre-hoveder. 
+  +: Det er jo praktisk - det er både får-ret og hoved-ret ...
+]
+{
+  T> Hvad siger du?
+  +: Nåh, og jeg forstår ikke at du ikke blev aflivet ved fødslen.
+
+  T> Men er du sulten?
+  +: du kan sgu' få næsten hvad som helst - så længe det er havrefras og flåede tomater.
+  ! answer
+  {
+    >> ja
+    >> tak
+    : Vårsgo'da.
+    : Splitte mine fedtsten! Får du ikke noget at æde der hjemme?
+
+    > *
+    ! weight 0.9
+    : Nåh, ja, hvis du ikke kan lide lugten i bageriet.
+  }
+
+  T> Du kan også få mine boller i karry ...
+  +: Nåh ik?
+
+  T> Det gaaaaazzzz man!
+  +: For helvede du er sjov.
+}
