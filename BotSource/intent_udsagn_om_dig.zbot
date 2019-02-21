@@ -1,0 +1,32 @@
+﻿
+! pattern (intent = du_er_fantastisk, type = udsagn)
+{
+  > du er fantastisk
+  > jeg elsker dig
+  > hvor er du god
+  > du er utrolig
+  > du er så sød
+  > du er %klog
+}
+
+! pattern (intent = du_gentager_dig_selv, type = udsagn)
+{
+  > du gentager dig selv
+  > det har du sagt
+  > det har du allerede sagt
+  > det har du sagt før
+  > det har du sagt tidligere
+  > det sagde du også lige før
+  > det sagde du også før
+  > det sagde du også igår
+}
+
+! pattern (intent = du_er_sjov, type = udsagn)
+{
+  > du er %sjov
+  > meget morsomt
+  > hvor er du %sjov
+  > very funny
+  > ROFL
+  > XD
+}

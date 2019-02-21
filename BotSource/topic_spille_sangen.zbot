@@ -1,0 +1,29 @@
+﻿>> syng_en_sang
+: Ja, da, så synger jeg da. Kender du den her ...
+: Okay, her kommer det ... (det sagde hun også igår) ...
+! restart_topic spille_sangen
+! continue
+
+! topic spille_sangen
+{
+  T> Jeg er dårlig til canasta, 
+  +: og til rommy og til whist.
+  +: Jeg får altid tæv i Uno og for silvan det er trist.
+  +: Det er aldrig mig der hiver sidste stik,
+  +: men jeg er verdens bedste til at spille ...
+  
+  T> Jeg er ingen ørn til tennis, 
+  +: jeg kan ikke spille squash.
+  +: Jeg er latterlig til fodbold, og til håndbold er jeg os´
+  +: Og det basket-pis, det ka´ jeg heller ik´
+  +: Men jeg er verdens bedste til at spille ...
+  
+  T> Jeg er verdens bedste til at spille ... 
+  
+  T> Jeg skynder mig, jeg skynder mig, jeg skynder mig, jeg skynder mig ...
+  
+  T> Jeg er verdens bedste til at spille ... 
+  +: til at høvle! til at gokke! Til at spille ...
+  
+  T> Hallo? Jajada .. Jeg stod lige og skulle til at synge pik!
+}

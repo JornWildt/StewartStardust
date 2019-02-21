@@ -1,0 +1,44 @@
+﻿! concept ugedag = mandag, tirsdag, onsdag, torsdag, fredag, lørdag, søndag
+
+! concept måned = januar, februar, marts, april, maj, juni, juli, august, september, oktober, november, december
+
+! define (type, subst)
+{
+  ugedag:
+    er: "er en dag i ugen.".
+  måned:
+    er: "en af årets tolv måneder.".
+}
+
+! define (ugedag)
+{
+  mandag:.
+  tirsdag:.
+  onsdag:.
+  torsdag:.
+  fredag:.
+  lørdag:.
+  søndag:.
+}
+
+! define (måned)
+{
+  januar:.
+  februar:.
+  marts:.
+  april:.
+  maj:.
+  juni:.
+  juli:.
+  august:.
+  september:.
+  oktober:.
+  november:.
+  december:.
+}
+
+
+! pattern (intent = hvilken_dag_er_det)
+{
+  > hvilken dag er det
+}

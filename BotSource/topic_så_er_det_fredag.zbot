@@ -1,9 +1,9 @@
 ﻿# Check for 10 seconds of silence every second second (for development).
-! every "*/2 * * ? * *"
-! when silent(00:00:05)
+# ! every "*/2 * * ? * *"
+# ! when silent(00:00:05)
 # Check for an hour of silence silence between 7:15 and 7:59 each friday
-# ! every "0 15-59 7 ? * FRI"
-# ! when silent(01:00:00)
+! every "0 15-59 7 ? * FRI"
+! when silent(01:00:00)
 : Så er det satteme fredag igen!
 +: Nu skal vi sgu' se noget film sammen, du og jeg. 
 +: Se nu bare her: https://www.youtube.com/watch?v=NTnynv3N_KE
@@ -31,6 +31,9 @@
 +: "Så ved du, du har dusket en totalt fed trunte i nat"
 : Nåh, sailor, så er det sgu' fredag igen.
 +: Nu skal du lige se hvordan vi startede på Terkel: https://www.youtube.com/watch?v=F6auGy6k3vg
+: Er det fredag?
++: Yes,yes, så er det landlov, krafteddeme.
++: Du får sgu' lige den bedste fra ugen, gøgler. Hør her: https://www.youtube.com/watch?v=Tt0EapKe_s4
 ! restart_topic fredag
 
 # Svar på - filmen findes ikke, sikke noget lort, fantastisk
@@ -40,4 +43,5 @@
   T> Yessir! Det er nemlig fredag!
 
   T> Jeg tror sgu' jeg skal i byen og finde en trunte jeg kan sparke kældervinduet ind på.
+  +: Af banen knægt.
 }

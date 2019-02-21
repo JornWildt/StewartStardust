@@ -1,0 +1,5 @@
+﻿>> er_det (noget:ugedag)
+! call DateTime.IsItWeekDay($noget)
+: <if(answer)>Ja, for fanden!<else>Det kan du godt regne med det ikke er.<endif>
+: <if(answer)>Yessir!<else>Nix du.<endif>
+: <if(answer)>Nemlig!<else>Ligner det måske <noget>, hvad?<endif>

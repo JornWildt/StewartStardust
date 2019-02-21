@@ -124,3 +124,11 @@
   > hvad er {attr} for {subj}
 }
 
+! pattern (intent = er_det, type = spm)
+{
+  > er det {noget}
+  > er det mon {noget}
+  > skulle det mon være {noget}
+  > kunne det være {noget}
+}
+
