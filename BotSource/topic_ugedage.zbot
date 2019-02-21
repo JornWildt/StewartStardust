@@ -1,0 +1,24 @@
+﻿# Check for 10 seconds of silence every second second (for development).
+! every "*/2 * * ? * *"
+! when silent(00:00:05)
+# Check for an hour of silence silence between 7:15 and 7:59 each friday
+# ! every "0 15-59 7 ? * FRI"
+# ! when silent(01:00:00)
+: Så er det satteme fredag igen!
++: Nu skal vi sgu' se noget film sammen, du og jeg. 
++: Se nu bare her: https://www.youtube.com/watch?v=NTnynv3N_KE
+: Så er det sgu' fredag, gamle svinger!
++: Jeg har fundet et klip frem fra Beate og Leons fest: https://www.youtube.com/watch?v=Pj6VrHpSnJs&t=4s
++: "Ja, det er ganske vist i dag - men jeg skrev lortet i går ...". Hø! Det var fanme en sjov fest.
+: Så blev det fredag igen, Pinochio!
++: Tid til fredags-hygge, du ved ...
++: Fælles Fransk sammen med lillemor.
++: Det er gaaazzzz - bare rolig ;-)
++: Men jeg har fundet en film frem vi kan se sammen: https://www.youtube.com/watch?v=PBqptk3jNDQ
++: "Glædelig jul allesammen" - når vi kommer dertil.
+! restart_topic fredag
+
+! topic fredag
+{
+  T> Yessir! Det er nemlig fredag!
+}
