@@ -1,5 +1,29 @@
-﻿>> er_det (noget:ugedag)
-! call DateTime.IsItWeekDay($noget)
+﻿>> er_det (x:ugedag)
+! call DateTime.IsItWeekDay($x)
 : <if(answer)>Ja, for fanden!<else>Det kan du godt regne med det ikke er.<endif>
 : <if(answer)>Yessir!<else>Nix du.<endif>
-: <if(answer)>Nemlig!<else>Ligner det måske <noget>, hvad?<endif>
+: <if(answer)>Nemlig!<else>Ligner det måske <x>, hvad?<endif>
+
+>> er_det (x:måned)
+! call DateTime.IsItMonth($x)
+: <if(answer)>Ja, for fanden!<else>Det kan du godt regne med det ikke er.<endif>
+: <if(answer)>Yessir!<else>Nix du.<endif>
+: <if(answer)>Nemlig!<else>Ligner det måske <x>, hvad?<endif>
+
+>> hvilken_dag_er_det
+! call DateTime.Time()
+: Det er sgu <answer; format="dddd">.
+
+
+>> hvilken_måned_er_det
+! call DateTime.Time()
+: Det er sgu <answer; format="MMMM">.
+
+>> hvad_er_klokken
+! call DateTime.Time()
+: Den er <answer; format="time:short">.
+: <answer; format="time:short">! Tid til at åbne en bajer!
+
+>> hvilken_dato_er_det
+! call DateTime.Time()
+: Tjah, <answer; format="D">.

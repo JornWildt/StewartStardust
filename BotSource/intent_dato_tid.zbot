@@ -38,7 +38,31 @@
 }
 
 
-! pattern (intent = hvilken_dag_er_det)
+! pattern (intent = hvilken_dag_er_det, type = spm)
 {
-  > hvilken dag er det
+  > %hvilken dag er det
+  > %hvilken dag er det nu
+  > %hvilken dag er det i dag
+}
+
+
+! pattern (intent = hvilken_måned_er_det, type = spm)
+{
+  > %hvilken måned er det
+  > %hvilken måned er det nu
+  > %hvilken måned er det i dag
+}
+
+
+! pattern (intent = hvad_er_klokken, type = spm)
+{
+  > hvad er klokken
+  > hvad er klokken nu
+  > kan du sige mig hvad klokken er
+}
+
+! pattern (intent = hvilken_dato_er_det, type = spm)
+{
+  > %hvilken dato er det
+  > %hvilken dato er det i dag
 }

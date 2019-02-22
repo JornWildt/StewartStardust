@@ -126,9 +126,9 @@
 
 ! pattern (intent = er_det, type = spm)
 {
-  > er det {noget}
-  > er det mon {noget}
-  > skulle det mon være {noget}
-  > kunne det være {noget}
+  > er det {x}
+  > er det mon {x}
+  > skulle det mon være {x}
+  > kunne det være {x}
 }
 
