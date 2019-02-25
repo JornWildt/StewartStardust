@@ -1,4 +1,4 @@
-﻿! pattern (intent = ulækkert, type = reaktion, holdning = neg)
+﻿! pattern (intent = ulækkert, holdning = neg)
 {
   > klamt
   > ulækkert
@@ -11,7 +11,7 @@
   > bvadr
 }
 
-! pattern (intent = forbløffet, type = reaktion, holdning = pos)
+! pattern (intent = forbløffet, holdning = pos)
 {
   > wow
   > wtf
@@ -33,9 +33,14 @@
   > åh nej
   > nøj
   > nøøj
+  > frækt
+  > stærkt
+  > sejt  
+  > xD
+  > cool
 }
 
-! pattern (intent = afventende, type = reaktion, holdning = nul)
+! pattern (intent = afventende, holdning = nul)
 {
   > aha
   > hmm
@@ -45,19 +50,20 @@
   > okay
 }
 
-! pattern (intent = morsomt, type = reaktion, holdning = pos)
+! pattern (intent = morsomt, holdning = pos)
 {
   > lol
   > haha
   > ha ha
   > fnis
   > griner
+  > grineren
   > sjovt
   > hehe
   > he he  
 }
 
-! pattern (intent = skuffet, type = reaktion, holdning = neg)
+! pattern (intent = skuffet, holdning = neg)
 {
   > øv
   > æv
@@ -68,7 +74,7 @@
   > suk
 }
 
-! pattern (intent = bande, type = reaktion, holdning = neg)
+! pattern (intent = bande, holdning = neg)
 {
   > fuck
   > for fanden
@@ -78,4 +84,16 @@
   > lort
   > pik
   > shit
+}
+
+! pattern (reaktion = ja)
+{
+  > ja
+  > jaja
+  > nåh
+  > nåhnåh
+  > nej
+  > nejnej
+  > bum
+  > bumbum
 }

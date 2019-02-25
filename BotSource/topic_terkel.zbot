@@ -1,6 +1,6 @@
 ﻿> *
-! weight 0.5
-: Det minder mig om dengang med Terkel. Dumme unger.
+! weight 0.4
+: Det minder mig om dengang med Terkel.
 ! start_topic terkel
 ! continue
 
@@ -13,7 +13,7 @@
 
 ! topic terkel
 {
-  T> Han er sgu' en god knægt. Ham Terkel.
+  T> Men han er sgu' en god knægt. Ham Terkel.
 
   T> Men sikke nogle dødbidere han omgås med.
   +: Se bare de to trækkerdrenge der. Hvad fanden var det nu de hed.
