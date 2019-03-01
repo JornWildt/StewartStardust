@@ -1,0 +1,41 @@
+﻿! define (forstærker)
+{
+  gamle:.
+  lede:.
+  sure:.
+  klamme:.
+  elendige:.
+}
+
+
+! define (øgenavn)
+{
+  bandit:.
+  fjols:.
+  luder:.
+  nar:.
+  sejler:.
+  skiderik:.
+  stivnakke:.
+  stodder:.
+  svinger:.
+  sømand:.
+}
+
+! pattern (intent = kaldenavn)
+{
+  > {f:forstærker} {navn:øgenavn}
+  > {navn:øgenavn}
+}
+
+>> kaldenavn (navn:øgenavn)
+! repeatable
+: Sagde du <navn>?
+! answer
+{
+  >> ja
+  : Det var lige godt satans!
+
+  >> nej
+  : Nåh, tænke det sgu' nok.
+}

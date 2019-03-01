@@ -6,4 +6,16 @@
   > jeg kan ikke klare det
   > det sejler bare for mig
   > det går ad helvedes til
+  > mit liv det sejler
+  > mit liv det går ad helvedes til
+}
+
+! pattern (intent = jeg_keder_mig)
+{
+  > jeg keder mig
+  > jeg ved ikke hvad jeg skal lave
+  > hvad skal jeg lave
+  > sker der ikke noget
+  > sker der ikke snart noget
+  > sker der ikke noget sjovt
 }

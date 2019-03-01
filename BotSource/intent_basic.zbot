@@ -9,13 +9,13 @@
 }
 
 
-! pattern (intent = hilsen, type = udsagn)
+! pattern (intent = hilsen, type = udråb)
 {
   > %hilsen
   > %hilsen {navn}
 }
 
-! pattern (intent = farvel, type = udsagn)
+! pattern (intent = farvel, type = udråb)
 {
   > farvel
   > farvel {navn}
@@ -25,7 +25,7 @@
   > sov godt
 }
 
-! pattern (intent = fornærme, type = udsagn, holdning = neg)
+! pattern (intent = fornærme, type = udråb, holdning = neg)
 {
   > %idiot
   > din %idiot
@@ -38,7 +38,7 @@
   > hold kæft
 }
 
-! pattern (intent = advare, type = udsagn, holdning = neg)
+! pattern (intent = advare, type = udråb, holdning = neg)
 {
   > så er det godt
   > pas lige på
@@ -59,7 +59,7 @@
   > {emne} eksisterer
 }
 
-! pattern (intent = sig_noget_sjovt)
+! pattern (intent = sig_noget_sjovt, type = opfodring)
 {
   > sig noget sjovt
   > fortæl en %joke
@@ -67,7 +67,7 @@
   > kan du en vittighed
 }
 
-! pattern (intent = kendt_ord, type = udsagn)
+! pattern (intent = kendt_ord)
 {
   > {emne}
 }

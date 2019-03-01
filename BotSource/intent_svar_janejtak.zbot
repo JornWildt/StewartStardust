@@ -9,7 +9,7 @@
   > sådan
 }
 
-! pattern (intent = ja, type = udsagn)
+! pattern (intent = ja, type = udråb)
 {
   > ja
   > jatak
@@ -36,9 +36,11 @@
   > meget
   > hørt
   > selvfølgelig
+  > gu gjorde jeg så
+  > ja for fanden
 }
 
-! pattern (intent = nej, type = udsagn)
+! pattern (intent = nej, type = udråb)
 {
   > nej
   > niks
@@ -58,7 +60,7 @@
   > stop
 }
 
-! pattern (intent = nej, type = udsagn, holdning = neg)
+! pattern (intent = nej, type = udråb, holdning = neg)
 {
   > du kan rende mig
   > du kan rende mig noget så grusomt
@@ -70,7 +72,7 @@
   > rend mig
 }
 
-! pattern (intent = enig, type = udsagn)
+! pattern (intent = enig, type = udråb)
 {
   > enig
   > helt enig
@@ -100,7 +102,7 @@
 
 ! concept vrøvl = vrøvl, sludder, ævl, pølsesnak
 
-! pattern (intent = uenig, type = udsagn, holdning = neg)
+! pattern (intent = uenig, type = udråb, holdning = neg)
 {
   > %vrøvl
   > sikke noget %vrøvl

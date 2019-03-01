@@ -1,0 +1,213 @@
+﻿! concept afgår = kører, afgår, går, triller, ruller
+
+! define (transportform)
+{
+  tog (toget, togene):.
+  bus (bussen, busser, busserne):.
+  metro (metroen):.
+}
+
+
+! define (station, sted)
+{
+  "Albertslund":
+    sted: <Danmark>.
+  "Allerød":
+    sted: <Danmark>.
+  "Avedøre":
+    sted: <Danmark>.
+  "Bagsværd":
+    sted: <Danmark>.
+  "Ballerup":
+    sted: <Danmark>.
+  "Bernstorffsvej":
+    sted: <Danmark>.
+  "Birkerød":
+    sted: <Danmark>.
+  "Bispebjerg":
+    sted: <Danmark>.
+  "Brøndby Strand":
+    sted: <Danmark>.
+  "Brøndbyøster":
+    sted: <Danmark>.
+  "Buddinge":
+    sted: <Danmark>.
+  "Carlsberg":
+    sted: <Danmark>.
+  "Charlottenlund":
+    sted: <Danmark>.
+  "Danshøj":
+    sted: <Danmark>.
+  "Dybbølsbro":
+    sted: <Danmark>.
+  "Dyssegård":
+    sted: <Danmark>.
+  "Egedal":
+    sted: <Danmark>.
+  "Emdrup":
+    sted: <Danmark>.
+  "Farum":
+    sted: <Danmark>.
+  "Flintholm":
+    sted: <Danmark>.
+  "Frederikssund":
+    sted: <Danmark>.
+  "Friheden":
+    sted: <Danmark>.
+  "Fuglebakken":
+    sted: <Danmark>.
+  "Gentofte":
+    sted: <Danmark>.
+  "Glostrup":
+    sted: <Danmark>.
+  "Greve":
+    sted: <Danmark>.
+  "Grøndal":
+    sted: <Danmark>.
+  "Hareskov":
+    sted: <Danmark>.
+  "Hellerup":
+    sted: <Danmark>.
+  "Herlev":
+    sted: <Danmark>.
+  "Hillerød":
+    sted: <Danmark>.
+  "Holte":
+    sted: <Danmark>.
+  "Hundige":
+    sted: <Danmark>.
+  "Husum":
+    sted: <Danmark>.
+  "Hvidovre":
+    sted: <Danmark>.
+  "Høje Taastrup":
+    sted: <Danmark>.
+  "Høvelte":
+    sted: <Danmark>.
+  "Ishøj":
+    sted: <Danmark>.
+  "Islev":
+    sted: <Danmark>.
+  "Jersie":
+    sted: <Danmark>.
+  "Jyllingevej":
+    sted: <Danmark>.
+  "Jægersborg":
+    sted: <Danmark>.
+  "Karlslunde":
+    sted: <Danmark>.
+  "KB Hallen":
+    sted: <Danmark>.
+  "Kildebakke":
+    sted: <Danmark>.
+  "Kildedal":
+    sted: <Danmark>.
+  "Klampenborg":
+    sted: <Danmark>.
+  "København H" ("Hovedbanegården", "Københavns hovedbanegård"):
+    sted: <Danmark>.
+  "Køge":
+    sted: <Danmark>.
+  "Langgade":
+    sted: <Danmark>.
+  "Lyngby":
+    sted: <Danmark>.
+  "Malmparken":
+    sted: <Danmark>.
+  "Måløv":
+    sted: <Danmark>.
+  "Nordhavn":
+    sted: <Danmark>.
+  "Ny Ellebjerg":
+    sted: <Danmark>.
+  "Nørrebro":
+    sted: <Danmark>.
+  "Nørreport":
+    sted: <Danmark>.
+  "Ordrup":
+    sted: <Danmark>.
+  "Peter Bangs Vej":
+    sted: <Danmark>.
+  "Ryparken":
+    sted: <Danmark>.
+  "Rødovre":
+    sted: <Danmark>.
+  "Sjælør":
+    sted: <Danmark>.
+  "Skovbrynet":
+    sted: <Danmark>.
+  "Skovlunde":
+    sted: <Danmark>.
+  "Solrød Strand":
+    sted: <Danmark>.
+  "Sorgenfri":
+    sted: <Danmark>.
+  "Stengården":
+    sted: <Danmark>.
+  "Stenløse":
+    sted: <Danmark>.
+  "Svanemøllen":
+    sted: <Danmark>.
+  "Sydhavn":
+    sted: <Danmark>.
+  "Taastrup":
+    sted: <Danmark>.
+  "Valby":
+    sted: <Danmark>.
+  "Vallensbæk":
+    sted: <Danmark>.
+  "Vangede":
+    sted: <Danmark>.
+  "Vanløse":
+    sted: <Danmark>.
+  "Veksø":
+    sted: <Danmark>.
+  "Vesterport":
+    sted: <Danmark>.
+  "Vigerslev Allé":
+    sted: <Danmark>.
+  "Virum":
+    sted: <Danmark>.
+  "Værløse":
+    sted: <Danmark>.
+  "Ølby":
+    sted: <Danmark>.
+  "Ølstykke":
+    sted: <Danmark>.
+  "Østerport":
+    sted: <Danmark>.
+  "Ålholm":
+    sted: <Danmark>.
+  "Åmarken":
+    sted: <Danmark>.
+}
+
+
+! pattern (intent = afgår, type = spm)
+{
+  > hvornår %afgår {transport:transportform}
+  > hvornår %afgår {transport:transportform} fra {start:sted}
+  > hvornår er næste afgang fra {start:sted}
+  > hvornår er næste {transport:transportform} fra {start:sted}
+}
+
+
+### ---------------------------------------------------------------------------
+### Find afgange fra station
+### ---------------------------------------------------------------------------
+
+>> afgår (transport:transportform)
+: <<hvornår kører <transport> fra Nordhavn>>
+
+>> afgår (start:sted)
+: <<hvornår kører toget fra <start> >>
+
+>> afgår (transport:transportform, start:sted)
+! repeatable
+! call Rejseplanen.FindNextDepartures($start, $transport)
+: Hvad satan, kan jeg også det? Jeg tror sgu' næste afgange fra <stop> er <result:{r |\
+  <r.time> : <r.line> mod <r.direction>}>
+{empty}: Jeg kunne ikke finde nogen afgange.\
++: Måske findes stoppestedet ikke?
+{error}: Det kan jeg ikke svare på. Jeg kan ikke komme i kontakt med Rejseplanen.
+

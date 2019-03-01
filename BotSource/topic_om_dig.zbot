@@ -1,21 +1,22 @@
-﻿> du *
-: Altså, nu snakker vi li'som om dig ik?
-: Skal du være fræk?
-: Hvorfor siger du det om mig?
-
-
->> du_gentager_dig_selv
+﻿>> du_gentager_dig_selv
 : Og hvad så! Skal du være fræk?
-: Det minder mig om at det er tid til en porter.
+: Nåh, der kan man bare se.
++: Det minder mig om at det er tid til en porter.
 
 >> du_er_sjov
 ! start_topic jokes
 ! continue
 
->> fornærme
-: Pas på, eller jeg smasker dine gummer til en blodappelsin
-+: og skrub så af ik!
-: Skal du have en røvfuld eller hvad?
+>> hvad_kan_du
+: Jeg kan da spille!
+! start_topic spille_sangen
+! continue
+
+> du *
+: Altså, nu snakker vi li'som om dig ik?
+: Skal du være fræk?
+: Hvorfor siger du det om mig?
+
 
 > er du *
 : Ville du da godt have jeg var det?

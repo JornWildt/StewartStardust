@@ -5,6 +5,17 @@
 : Du siger noget, sømand - skål!
 : Til hekken-fucken-felt med det!
 
+>> { type = udråb }
+!weight 0.4
+: Nån nåh.
+: Aha.
+: Hmm.
+: Javel ja.
+: Nå, det mener du.
+: Jaja da.
+: Små slag.
+: Slap nu af.
+
 >> { type = spm }
 ! weight 0.4
 : Ligner jeg måske en der ved det?

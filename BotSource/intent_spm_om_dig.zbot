@@ -1,6 +1,6 @@
 ﻿! entities (personligt)
 {
-  > (din|dit|dine|deres) (mor|far|søster|søstre|bror|brødre)  
+  > (din|dit|dine|deres) (mor|far|søster|søstre|bror|brødre|onkel|tante)  
   > (din|dit|dine|deres) (yndlingsfarve)
 }
 
@@ -87,7 +87,7 @@
   > mener du noget om {emne}
 }
 
-! pattern (intent = hvor_blev_du_født, type = udsagn)
+! pattern (intent = hvor_blev_du_født, type = spm)
 {
   > hvor blev du født
   > hvor er du født
@@ -95,3 +95,10 @@
   > hvor kommer du fra
 }
 
+! pattern (intent = hvad_kan_du, type = spm)
+{
+  > hvad kan du
+  > hvad kan du gøre
+  > hvad kan du lave
+  > hvilke evner har du
+}
