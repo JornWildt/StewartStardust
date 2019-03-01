@@ -1,0 +1,3 @@
+> OWM +
+! call OWM.Forecast($1)
+: <result>
