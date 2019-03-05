@@ -1,3 +1,31 @@
-> OWM +
-! call OWM.Forecast($1)
-: <result>
+﻿! pattern (intent = hvad_bliver_vejret, type = spm)
+{
+  > hvad bliver vejret
+  > hvordan bliver vejret
+  > hvorledes bliver vejret
+  > hvad bliver vejret i {sted}
+  > hvordan bliver vejret i {sted}
+  > hvorledes bliver vejret i {sted}
+  > hvordan ser vejret ud
+  > hvordan er vejrudsigten
+  > hvordan ser vejrudsigten ud
+  > sig noget om vejret
+  > sig noget om vejrudsigten
+  > owm
+}
+
+>> hvad_bliver_vejret
+! continue with Hvordan bliver vejret i København
+
+>> hvad_bliver_vejret (sted:*)
+! repeatable
+! set user.sted = $sted
+! call OWM.Forecast($sted)
+! answer
+{
+  > * morgen *
+  ! call OWM.Forecast(user.sted)
+  : I morgen bliver det <tomorrow.weather>. Og mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
+}
+: Det bliver sgu' <today.weather>! Og mellem <today.minTemp> til <today.maxTemp> grader.
++: I morgen bliver det <tomorrow.weather>. Og mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
