@@ -15,17 +15,41 @@
 }
 
 >> hvad_bliver_vejret
+! repeatable
 ! continue with Hvordan bliver vejret i København
 
 >> hvad_bliver_vejret (sted:*)
+! weight 0.99
+: Hallo ...
++: << <sted> >>
+
+>> hvad_bliver_vejret (sted:sted)
 ! repeatable
-! set user.sted = $sted
+! set session.sted = $sted
+! start_topic vejret
 ! call OWM.Forecast($sted)
-! answer
-{
-  > * morgen *
-  ! call OWM.Forecast(user.sted)
-  : I morgen bliver det <tomorrow.weather>. Og mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
-}
 : Det bliver sgu' <today.weather>! Og mellem <today.minTemp> til <today.maxTemp> grader.
-+: I morgen bliver det <tomorrow.weather>. Og mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
+{error}: Hmmm, det ved jeg sgu' ikke.
+
+! topic vejret
+{
+  >> hvad_med_i_morgen
+  ! call OWM.Forecast(session.sted)
+  : I morgen bliver det så <tomorrow.weather>. Og mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
+  {error}: Hmmm, det ved jeg sgu' ikke.
+
+  >> hvor_er_det
+  : I <session.sted>. Hvad troede du?
+  ! answer
+  {
+    > *
+    : Nåh? Ja, der kan man bare se.
+  }
+
+  >> tak
+  : Ja, hvem skulle have troet jeg også var en vejrstation!
+  :+ Men sådan en gammel sømand som mig - han kan sgu' noget du.
+  +: Nemlig!
+}
+
+

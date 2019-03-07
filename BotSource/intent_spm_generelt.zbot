@@ -49,6 +49,8 @@
   > hvor henne er det
   > hvor ligger det
   > hvor ligger det henne
+  > hvor henne
+  > hvor
 }
 
 ! pattern (intent = eksisterer_der, type = spm)
@@ -132,3 +134,11 @@
   > kunne det være {x}
 }
 
+! pattern (intent = hvad_med_i_morgen, type = spm)
+{
+  > hvad med i morgen
+  > og hvad så med i morgen
+  > og i morgen
+  > hvad bliver det i morgen
+  > hvad sker der så i morgen
+}

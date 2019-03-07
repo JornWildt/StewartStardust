@@ -28,3 +28,10 @@
 : Pas på, eller jeg smasker dine gummer til en blodappelsin
 +: og skrub så af ik!
 : Skal du have en røvfuld eller hvad?
+
+>> det_lyder_godt
+: Nemlig!
+: Yessir! Skål!
+
+>> det_lyder_skidt
+: Ja, sådan er det jo engang i mellem.

@@ -112,4 +112,19 @@
   "kanin" (kaninen, kaniner, kaninerne):
     føde: <plante>;
     dyreklasse: pattedyr.
+
+  "gris" (grisen, grise, grisene):
+    dyreklasse: pattedyr.
+
+  "ko" (koen, køer, køerne):
+    dyreklasse: pattedyr.
+
+  "tyr" (tyren, tyre, tyrene):
+    dyreklasse: pattedyr.
+
+  "hest" (hesten, heste, hestene):
+    dyreklasse: pattedyr.
+
+  "æsel" (æslet, æsler, æslerne):
+    dyreklasse: pattedyr.
 }

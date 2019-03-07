@@ -1,4 +1,4 @@
-! define (type, subst)
+ï»¿! define (type, subst)
 {
   fugl:
     er: "er en fugl".
@@ -10,28 +10,31 @@
   "fugl" (fuglen, fugle, fuglene):
     dyreklasse: fugl.
     
-  "agerhøne" (agerhønen, agerhøns, agerhønsene):
+  "agerhÃ¸ne" (agerhÃ¸nen, agerhÃ¸ns, agerhÃ¸nsene):
     dyreklasse: fugl.
     
-  "høne" (hønen, høns, hønsene):
+  "hÃ¸ne" (hÃ¸nen, hÃ¸ns, hÃ¸nsene):
+    dyreklasse: fugl.
+    
+  "hane" (hanen, haner, hanerne):
     dyreklasse: fugl.
     
   "allike" (alliken, alliker, allikerne):
     dyreklasse: fugl.
     
-  "blishøne" (blishønen, blishøns, blishønsene):
+  "blishÃ¸ne" (blishÃ¸nen, blishÃ¸ns, blishÃ¸nsene):
     dyreklasse: fugl.
     
-  "blåmejse" (blåmejsen, blåmejser, blåmejserne):
+  "blÃ¥mejse" (blÃ¥mejsen, blÃ¥mejser, blÃ¥mejserne):
     dyreklasse: fugl.
     
   "bogfinke" (bogfinken, bogfinker, bogfinkerne):
     dyreklasse: fugl.
     
-  "lærke" (lærken, lærker, lærkerne):
+  "lÃ¦rke" (lÃ¦rken, lÃ¦rker, lÃ¦rkerne):
     dyreklasse: fugl.
     
-  "gås" (gåsen, gæs, gæssene, bramgås, bramgæs, canadagås, canadagæs):
+  "gÃ¥s" (gÃ¥sen, gÃ¦s, gÃ¦ssene, bramgÃ¥s, bramgÃ¦s, canadagÃ¥s, canadagÃ¦s):
     dyreklasse: fugl.
     
   "svale" (svalen, svaler, svalerne, bysvale, landsvale, digesvale):
@@ -40,12 +43,12 @@
   "dompap" (dompappen, dompapper, dompapperne):
     dyreklasse: fugl.
     
-  "høg" (høgen, høge, høgene):
-    føde: <mus>, <fugl>;
+  "hÃ¸g" (hÃ¸gen, hÃ¸ge, hÃ¸gene):
+    fÃ¸de: <mus>, <fugl>;
     dyreklasse: fugl.
     
-  "falk" (falken, falke, falkene, tårnfalk, tårnfalken, vandrefalk):
-    føde: <mus>, <fugl>;
+  "falk" (falken, falke, falkene, tÃ¥rnfalk, tÃ¥rnfalken, vandrefalk):
+    fÃ¸de: <mus>, <fugl>;
     dyreklasse: fugl.
     
   "hejre" (hejren, hejrer, hejrerne, fiskehejre):
@@ -54,36 +57,36 @@
   "fasan" (fasanen, fasaner, fasanerne):
     dyreklasse: fugl.
     
-  "ørn" (ørnen, ørne, ørnene, fiskeørn, kongeørn, havørn):
-    føde: <mus>, <fugl>;
+  "Ã¸rn" (Ã¸rnen, Ã¸rne, Ã¸rnene, fiskeÃ¸rn, kongeÃ¸rn, havÃ¸rn):
+    fÃ¸de: <mus>, <fugl>;
     dyreklasse: fugl.
     
-  "mejse" (mejsen, mejser, mejserne, blåmejse, spætmejse, sumpmejse, halemejse):
+  "mejse" (mejsen, mejser, mejserne, blÃ¥mejse, spÃ¦tmejse, sumpmejse, halemejse):
     dyreklasse: fugl.
     
-  "and" (anden, ænder, ænderne):
+  "and" (anden, Ã¦nder, Ã¦nderne):
     dyreklasse: fugl.
     
-  "spætte" (spætten, spætter, spætterne, grønspætte, flagspætte, sortspætte):
+  "spÃ¦tte" (spÃ¦tten, spÃ¦tter, spÃ¦tterne, grÃ¸nspÃ¦tte, flagspÃ¦tte, sortspÃ¦tte):
     dyreklasse: fugl.
     
-  "spurv" (spurven, spurve, spurvene, gråspurv, gråspurven, gråspurve, gråspurvene, skovspurv):
+  "spurv" (spurven, spurve, spurvene, grÃ¥spurv, grÃ¥spurven, grÃ¥spurve, grÃ¥spurvene, skovspurv):
     dyreklasse: fugl.
     
-  "krage" (kragen, krager, kragerne, gråkrage):
+  "krage" (kragen, krager, kragerne, grÃ¥krage):
     dyreklasse: fugl.
     
-  "gøg" (gøgen, gøge, gøgene):
+  "gÃ¸g" (gÃ¸gen, gÃ¸ge, gÃ¸gene):
     dyreklasse: fugl.
     
   "stork" (storken, storke, storkene):
     dyreklasse: fugl.
     
-  "måge" (mågen, måger, mågerne, hættemåge, sildemåge, sølvmåge):
+  "mÃ¥ge" (mÃ¥gen, mÃ¥ger, mÃ¥gerne, hÃ¦ttemÃ¥ge, sildemÃ¥ge, sÃ¸lvmÃ¥ge):
     dyreklasse: fugl.
     
-  "ugle" (uglen, ugler, uglerne, kirkeugle, tårnugle, natugle, hornugle, slørugle, sneugle):
-    føde: <mus>;
+  "ugle" (uglen, ugler, uglerne, kirkeugle, tÃ¥rnugle, natugle, hornugle, slÃ¸rugle, sneugle):
+    fÃ¸de: <mus>;
     dyreklasse: fugl.
     
   "svane" (svanen, svaner, svanerne, knopsvane, sangsvane):
@@ -104,7 +107,7 @@
   "due" (duen, duer, duerne, brevdue, ringdue):
     dyreklasse: fugl.
     
-  "råge" (rågen, råger, rågerne):
+  "rÃ¥ge" (rÃ¥gen, rÃ¥ger, rÃ¥gerne):
     dyreklasse: fugl.
     
   "skarv" (skarven, skarve, skarvene):
@@ -116,7 +119,7 @@
   "solsort" (solsorten, solsorte, solsortene):
     dyreklasse: fugl.
     
-  "stær" (stæren, stære, stærene):
+  "stÃ¦r" (stÃ¦ren, stÃ¦re, stÃ¦rene):
     dyreklasse: fugl.
     
   "lappedykker" (lappedykkeren, lappedykkere, lappedykkerne, "toppet lappedykker"):
