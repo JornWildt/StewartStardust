@@ -1,0 +1,21 @@
+﻿WindDirMap ::=
+[
+  "N" : "Nord",
+  "NNE" : "næsten Nord",
+  "NE" : "Nordøst",
+  "ENE" : "tæt på Nordøst",
+  "E" : "Øst",
+  "ESE" : "cirka Øst",
+  "SE" : "Sydøst",
+  "SSE" : "omkring Sydøst",
+  "S" : "Syd",
+  "SSW" : "Syd (næsten)",
+  "SW" : "Sydvest",
+  "WSW" : "så'en Sydvest",
+  "W" : "Vest",
+  "WNW" : "Vest",
+  "NW" : "Nordvest",
+  "NNW" : "omtrent Nordvest"
+]
+
+MapWindDir(dir) ::= "<WindDirMap.(dir)>"
