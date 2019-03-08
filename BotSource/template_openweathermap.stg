@@ -21,7 +21,9 @@
 MapWindDir(dir) ::= "<WindDirMap.(dir)>"
 
 VejrKommentar(w) ::= <<
-<if(w.isStorm)>Splitte mine fedtsten - der er storm på vej!
+<if(w.isSnow)>Snevejr? Hvad satan skal vi nu med det?
+<elseif(w.isStorm && w.isRain)>Splitte mine fedtsten! Regn og storm i butikken - spænd klodserne op!
+<elseif(w.isStorm)>Splitte mine fedtsten - der er storm på vej!
 <elseif(w.isGale)>Spænd selerne! Sikke en blæst.
 <elseif(w.isStrongBreeze)>Nåh, det ser da vist ud til at blæse lidt min ven.<endif>
 >>
