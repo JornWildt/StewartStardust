@@ -28,7 +28,9 @@
 ! set session.sted = $sted
 ! start_topic vejret
 ! call OWM.Forecast($sted)
-: Det bliver sgu' <today.weather>! Mellem <today.minTemp> til <today.maxTemp> grader. Og vinden kommer fra <MapWindDir(today.windDir)>.
+: Det bliver sgu' <today.weather>! Mellem <today.minTemp> til <today.maxTemp> grader.
++: Og vinden bliver op til <today.windSpeed> m/s fra <MapWindDir(today.windDir)>.
++: <VejrKommentar(today)>
 {error}: Hmmm, det ved jeg sgu' ikke.
 
 
@@ -36,7 +38,8 @@
 {
   >> hvad_med_i_morgen
   ! call OWM.Forecast(session.sted)
-  : I morgen bliver det så <tomorrow.weather>. Mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.  Og vinden kommer fra <MapWindDir(tomorrow.windDir)>.
+  : I morgen bliver det så <tomorrow.weather>. Mellem <tomorrow.minTemp> til <tomorrow.maxTemp> grader.
+  +: Og vinden bliver op til <tomorrow.windSpeed> m/s fra <MapWindDir(tomorrow.windDir)>.
   {error}: Hmmm, det ved jeg sgu' ikke.
 
   >> hvor_er_det

@@ -88,6 +88,7 @@
   > det gør jeg også
   > det mener jeg også
   > det holder jeg også på
+  > ja det må du nok sige
   > det ved jeg
   > kunne ikke være mere enig
   > jeg kan ikke være mere enig
@@ -119,6 +120,10 @@
   > glem det
   > rend og hop
   > hop i havet
+  > det tror jeg ikke
+  > det tror jeg faktisk ikke
+  > det tror jeg sådan set ikke
+  > det har jeg svært ved at forestille mig
 }
 
 ! pattern (intent = det_lyder_godt, type = udråb)
