@@ -3,6 +3,11 @@
   > * den *
   > * (største|størst|trang|snæver|klodser|kom|stang|bæver|bæveren|stilk|stilken|misses|fyr) *
   : Det sagde hun også igår!
+
+  > det sagde hun også i går
+  > det sagde hun også igår
+  : Det sagde hun sgu' Sååådan.
+  ! continue
 ]
 {
   T> Du ve' jeg den største

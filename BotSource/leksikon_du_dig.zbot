@@ -50,10 +50,11 @@ LIMIT 5
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
 : <result:{r |<r.intro>}>
-{Empty}: Ikke noget der rager dig Pinochio
+{Empty}: Ikke noget der kommer dig ved Pinochio
 
 >> hvad_mener_du_om
 ! weight 0.9
 : Hvad?
-: Det sgu da for ånsvagt?
+: Aner det ikke?
+: Kom tætter på du, så skal jeg vise dig min mening om det ...
 

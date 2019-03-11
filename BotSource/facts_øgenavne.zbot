@@ -1,40 +1,58 @@
-﻿! define (forstærker)
-{
-  gamle:.
-  lede:.
-  sure:.
-  klamme:.
-  elendige:.
-}
+﻿! concept forstærker = gamle,
+  lede,
+  sure,
+  klamme,
+  elendige
+
+! concept øgenavn = bandit,
+  fjols,
+  luder,
+  nar,
+  skiderik,
+  stivnakke,
+  stodder,
+  svinger,
+  sømand,
+  sejler,
+  pirat,
+  tossehoved
 
 
-! define (øgenavn)
+! entities (øgenavn)
 {
-  bandit:.
-  fjols:.
-  luder:.
-  nar:.
-  sejler:.
-  skiderik:.
-  stivnakke:.
-  stodder:.
-  svinger:.
-  sømand:.
+  > %forstærker %forstærker? %øgenavn
 }
+
 
 ! pattern (intent = kaldenavn)
 {
-  > {f:forstærker} {navn:øgenavn}
   > {navn:øgenavn}
+  > din {navn:øgenavn}
+  > dit {navn:øgenavn}
+  > du er {navn:øgenavn}
 }
+
+# Fjern afsluttende øgenavne, når der står noget foran
+> + + + %forstærker %øgenavn
+: << <1> <2> <3> >>
+
+> + + + %øgenavn
+! weight 0.99
+: << <1> <2> <3> >>
+
+# Fjern indledende øgenavne
+> hvad så %forstærker %øgenavn +
+! weight 2.0
+: << XXX <1> >>
 
 >> kaldenavn (navn:øgenavn)
 ! repeatable
 : Sagde du <navn>?
+: Siger du <navn> til farmand her?
 ! answer
 {
   >> ja
-  : Det var lige godt satans!
+  : Det var lige godt satans! Magen til frækkert, hvad!
 
   >> nej
   : Nåh, tænke det sgu' nok.
