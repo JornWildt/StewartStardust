@@ -1,4 +1,14 @@
-﻿>> er_det (x:ugedag)
+﻿! pipeline start
+! call DateTime.Details()
+! set tmp.erMandag = isMonday
+! set tmp.erFredag = isFriday
+! set tmp.erWeekend = isWeekend
+! set tmp.erMorgen = isMorning
+! set tmp.erAften = isEvening
+! set tmp.erNat = isNight
+
+
+>> er_det (x:ugedag)
 ! call DateTime.IsItWeekDay($x)
 : <if(answer)>Ja, for fanden!<else>Det kan du godt regne med det ikke er.<endif>
 : <if(answer)>Yessir!<else>Nix du.<endif>

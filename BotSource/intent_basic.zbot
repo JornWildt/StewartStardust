@@ -9,6 +9,10 @@
 }
 
 
+! concept hilsen = hej, hej med dig, dav, davs, hejsa, goddag, 
+  god dag, mojn, godmorgen, god morgen, morgen, halløj, 
+  vær hilset, hallo, hey, wolla, yo
+
 ! pattern (intent = hilsen, type = udråb)
 {
   > %hilsen
@@ -23,6 +27,17 @@
   > auf wienerschnitzel
   > godnat
   > sov godt
+}
+
+! pattern (intent = tak, type = svar)
+{
+  > tak
+  > sejt
+  > fedt
+  > tusind tak
+  > det er for meget
+  > det er alt for meget
+  > sådan
 }
 
 ! pattern (intent = fornærme, type = udråb, holdning = neg)

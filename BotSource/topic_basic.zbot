@@ -1,0 +1,49 @@
+﻿>> hjælp
+: Og hvorfor så det? Hvad er der nu galt?
+! answer
+{
+  > *
+  : Ja, så siger vi det. Var der andet - eller skal du bare have ryddet gebisset?
+  : Slap af - prøv igen. Du skal se - i morgen bliver det hele meget bedre.
+}
+
+>> hilsen
+: Ja, selv tak.
+: Skjål!
+: Hvad fa'en er det dig.
+: <(Halløj|Davs|Dav|Goddag)> <(%stewart_øgenavn)>
+: Dav. Og hvad har du så på hjertet <(%stewart_øgenavn)>?
+
+>> hilsen
+! when tmp.erMorgen
+: Godmorgen du!
+
+>> hilsen
+! when tmp.erAften
+: Godaften.
+
+>> hilsen
+! when tmp.erSolskin
+: Halløj du. Sikke et vejr, hvad? Skal du have en bajer?
+! answer
+{
+  >> ja
+  : Her! Skål du.
+
+  >> nej
+  : Ja, så snupper jeg sgu' bare en sæl. Skjål du!
+}
+
+>> hilsen
+! when tmp.erSolskin
+: Ja, godt ord igen. Sikke en fantastisk dag.
+! answer
+{
+  >> uenig
+  : Nåh, det syntes du ikke?
+  : Javel så, der kan man bare se.
+
+  >> enig
+  : Måske skulle man gå en tur sådan en dag.
+  +: Du ved - ned til bænken og snuppe en lille en.
+}

@@ -1,24 +1,4 @@
-﻿>> hjælp
-: Og hvorfor så det? Hvad er der nu galt?
-! answer
-{
-  > *
-  : Ja, så siger vi det. Var der andet - eller skal du bare have ryddet gebisset?
-  : Du gør det sgu' da også helt forkert.
-  : Slap af - prøv igen.
-}
-
->> hilsen
-: Ja, selv tak.
-: Godmorgen du.
-: Skjål!
-: Halløj %øgenavn
-: Hvad fa'en er det dig.
-: Ja, godt ord igen. Sikke en dag.
-! continue
-
-
->> tak
+﻿>> tak
 : Velbekomme.
 : Skål!
 : Selv tak.

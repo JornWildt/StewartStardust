@@ -1,4 +1,14 @@
-﻿! pattern (intent = hvad_bliver_vejret, type = spm)
+﻿! pipeline start
+! call OWM.Weather("københavn, dk")
+! set tmp.erRegnvejr = isRain
+! set tmp.erSnevejr = isSnow
+! set tmp.erSolskin = isSunny
+! set tmp.erSkyfrit = isClear
+! set tmp.erOverskyet = isCloudy
+! set tmp.erStormvejr = isStorm
+
+
+! pattern (intent = hvad_bliver_vejret, type = spm)
 {
   > hvad bliver vejret
   > hvordan bliver vejret
@@ -57,3 +67,14 @@
 }
 
 
+> qqqq
+! call OWM.Forecast("København")
+! set session.tmp = today.maxTemp
+: L <today.maxTemp>
+
+> zzzz
+: M <session.tmp>
+
+! every "*/10 * * ? * *"
+! call OWM.Forecast("København")
+! set session.tmp = today.maxTemp

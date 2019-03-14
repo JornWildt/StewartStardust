@@ -1,15 +1,4 @@
-﻿! pattern (intent = tak, type = svar)
-{
-  > tak
-  > sejt
-  > fedt
-  > tusind tak
-  > det er for meget
-  > det er alt for meget
-  > sådan
-}
-
-! pattern (intent = ja, type = udråb)
+﻿! pattern (intent = ja, type = udråb)
 {
   > ja
   > jatak
