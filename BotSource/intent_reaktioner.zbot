@@ -48,6 +48,25 @@
   > hmmmm
   > hmh
   > okay
+  > der kan man se
+  > der kan man bare se
+  > ser man det
+  > javel ja  
+}
+
+! pattern (intent = er_du_sikker, type = spm, holdning = nul)
+{
+  > mener du det
+  > mener du det for alvor
+  > mener du seriøst det for alvor
+  > mener du seriøst det alvorligt
+  > mener du virkelig det for alvor
+  > mener du virkelig det alvorligt
+  > er du helt sikker
+  > er du bombe sikker
+  > er du virkelig sikker
+  > er du seriøst sikker
+  > er du sikker
 }
 
 ! pattern (intent = morsomt, type = udråb, holdning = pos)

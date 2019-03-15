@@ -7,20 +7,19 @@
 ! set tmp.erOverskyet = isCloudy
 ! set tmp.erStormvejr = isStorm
 
+! concept vejr_hvad = hvad, hvordan, hvorledes
 
 ! pattern (intent = hvad_bliver_vejret, type = spm)
 {
-  > hvad bliver vejret
-  > hvordan bliver vejret
-  > hvorledes bliver vejret
-  > hvad bliver vejret i {sted}
-  > hvordan bliver vejret i {sted}
-  > hvorledes bliver vejret i {sted}
-  > hvordan ser vejret ud
-  > hvordan er vejrudsigten
-  > hvordan ser vejrudsigten ud
+  > %vejr_hvad bliver vejret
+  > %vejr_hvad bliver vejret i {sted}
+  > %vejr_hvad ser vejret ud
+  > %vejr_hvad er vejrudsigten
+  > %vejr_hvad ser vejrudsigten ud
   > sig noget om vejret
   > sig noget om vejrudsigten
+  > sig noget om vejret i morgen
+  > sig noget om vejrudsigten i morgen
   > owm
 }
 
