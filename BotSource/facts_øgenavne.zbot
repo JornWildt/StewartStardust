@@ -15,12 +15,15 @@
   sømand,
   sejler,
   pirat,
-  tossehoved
+  tossehoved,
+  skipper,
+  kaptajn
 
 
 ! entities (øgenavn)
 {
   > %forstærker %forstærker? %øgenavn
+  > %øgenavn
 }
 
 

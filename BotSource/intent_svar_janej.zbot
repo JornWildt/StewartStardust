@@ -114,24 +114,3 @@
   > det tror jeg sådan set ikke
 }
 
-! pattern (intent = det_lyder_godt, type = udråb)
-{
-  > det lyder godt
-  > fantastisk
-  > sådan
-  > herligt
-  > super
-  > godt
-}
-
-! pattern (intent = det_lyder_skidt, type = udråb)
-{
-  > sikke noget møg
-  > sikke noget skidt
-  > sikke noget lort
-  > sådan noget møg
-  > sådan noget skidt
-  > sådan noget lort
-  > øv
-  > surt  
-}

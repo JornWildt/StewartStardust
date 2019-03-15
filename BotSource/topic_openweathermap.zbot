@@ -63,6 +63,24 @@
   : Ja, hvem skulle have troet jeg også var en vejrstation!
   :+ Men sådan en gammel sømand som mig - han kan sgu' noget du.
   +: Nemlig!
+
+  >> tvivlende
+  : Det passer sgu!
+
+  >> tvivlende
+  >> er_du_sikker
+  : Tror du ikke på mig?
+  ! answer
+  {
+    >> nej
+    : Så check da selv efter.
+
+    >> Ja
+    : Fint. Lad os så kommer videre.
+  }
+
+  >> {type:udråb}
+  : Nåh ja, vi kan jo ikke gøre noget ved vejret
 }
 
 

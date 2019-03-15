@@ -1,4 +1,4 @@
-﻿! pattern (intent = ulækkert, type = udråb, holdning = neg)
+﻿! pattern (intent = væmmes, type = udråb, holdning = neg)
 {
   > klamt
   > ulækkert
@@ -54,8 +54,21 @@
   > javel ja  
 }
 
+! pattern (intent = tvivlende, type = udråb, holdning = nul)
+{
+  > hmm
+  > hmmm
+  > hmmmm
+  > hmh
+  > ja det siger du
+  > Ja det påstår du
+  > er du sikker
+}
+
 ! pattern (intent = er_du_sikker, type = spm, holdning = nul)
 {
+  > kan det nu også passe
+  > kan det nu passe
   > mener du det
   > mener du det for alvor
   > mener du seriøst det for alvor
@@ -67,6 +80,16 @@
   > er du virkelig sikker
   > er du seriøst sikker
   > er du sikker
+  > kan det passe
+  > padder det virkeligt
+  > er det rigtigt
+  > er det virkelig rigtigt
+  > det kan du virkelig ikke mene
+  > det kan du ikke mene
+  > det kan virkelig ikke passe
+  > det kan ikke passe
+  > er det dit alvor
+  > det kan ikke være dit alvor
 }
 
 ! pattern (intent = morsomt, type = udråb, holdning = pos)
@@ -103,4 +126,27 @@
   > lort
   > pik
   > shit
+}
+
+! pattern (intent = det_lyder_godt, type = udråb)
+{
+  > det lyder godt
+  > fantastisk
+  > sådan
+  > herligt
+  > super
+  > godt
+}
+
+
+! pattern (intent = det_lyder_skidt, type = udråb)
+{
+  > sikke noget møg
+  > sikke noget skidt
+  > sikke noget lort
+  > sådan noget møg
+  > sådan noget skidt
+  > sådan noget lort
+  > øv
+  > surt  
 }

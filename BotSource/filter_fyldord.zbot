@@ -1,7 +1,13 @@
-﻿! concept fyldord = åh, ååh, åhh, ååhh, ah, aah, ahh, aahh, hm, hmm, hmmm, aha
+﻿! concept fyldord = åh, ååh, åhh, ååhh, ah, aah, ahh, aahh, hm, hmm, hmmm, aha, nåh, nå, nåda, nåh da,
+  tjah, joh, pss
 
-> %fyldord +
-: << <1> >>
+! ignore
+{
+  > %fyldord
+}
 
 > jeg (siger|sagde) +
 : << <1> >>
+
+> * kan da *
+: << <1> kan <2> >>
