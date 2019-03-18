@@ -1,0 +1,13 @@
+﻿! define (mening)
+{
+  $: emne: <pizza>; 
+      holdning: "Pizza? Det kan du godt hælde i beddet for min skyld. Jeg får podagra af den slags fremmedmad.".
+  $: emne: <fisk>; 
+      kan_lide: 1;
+      holdning: "Fisk er sgu godt du. Stegt sild og stjerneskud - det er frokost for mandfolk.".
+  $: emne: <Hakkebøf med brun sovs>;
+      kan_lide: 1;
+      holdning: "Hakkebøf - yessir! Og masser af løg.".
+  $: emne: <Gule ærter>;
+      holdning: "Mums du.".
+}

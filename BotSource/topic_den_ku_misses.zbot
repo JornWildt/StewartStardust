@@ -1,11 +1,19 @@
-﻿! topic den_ku_misses
+﻿! pattern (intent = den_ku_misses)
+{
+  > det sagde hun også i går
+  > den kunne misses
+  > den ku misses
+}
+
+
+! topic den_ku_misses
 [
   > * den *
   > * (største|størst|trang|snæver|klodser|kom|stang|bæver|bæveren|stilk|stilken|misses|fyr) *
   : Det sagde hun også igår!
+  ! continue
 
-  > det sagde hun også i går
-  > det sagde hun også igår
+  >> den_ku_misses
   : Det sagde hun sgu' Sååådan.
   ! continue
 ]
@@ -23,11 +31,5 @@
   +: det sagde hun også igår
 
   T> Og pladsen er trang ...
-  +: det sagde hun også igår
-
-  T> Jeg er så sulten så jeg ku spise en bæver
-  +: ...
-
-  T> Skal vi ikke hjem og lege med mine klodser ...  
   +: Den ku misses!
 }

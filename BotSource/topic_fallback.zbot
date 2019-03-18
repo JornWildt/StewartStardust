@@ -1,12 +1,12 @@
 ﻿>> { type = udsagn }
-!weight 0.4
+! weight 0.5
 : Ja, så siger vi det.
 : Ved du hvad? Stik mig lige en bajer. Sådan ja.
 : Du siger noget, sømand - skål!
 : Til hekken-fucken-felt med det!
 
 >> { type = udråb }
-!weight 0.4
+! weight 0.5
 : Nån nåh.
 : Aha.
 : Hmm.
@@ -22,7 +22,7 @@
 
 
 >> { type = spm }
-! weight 0.4
+! weight 0.5
 : Ligner jeg måske en der ved det?
 : Her, du får lige en klud.
 +: jeg tror sgu' dine briller trænger til at blive pudset.
@@ -35,7 +35,7 @@
 : Held og lykke - og du får brug for det!
 
 > *
-! weight 0.4
+! weight 0.5
 : Ja, så siger vi det.
 : Puha, den er varm i dag. Man bliver helt tør i halsen.
 : Så snakker vi ikke mere om det.
@@ -55,7 +55,7 @@
 : Nåh du er stadig i voksealderen hva
 
 > *
-! weight 0.45
+! weight 0.5
 : Hvad med hende din trunte?
 +: venter hun ikke snart en stikling?
 ! answer
@@ -70,7 +70,7 @@
 
 
 > *
-! weight 0.45
+! weight 0.5
 : Så en dag ville jeg forkæle tøsepigebarnskatten.
 +: så gik jeg ned til butikken og sagde 
 +: "så skal du stik' mig en creme til modbydelig hud og griseøjne i midten"

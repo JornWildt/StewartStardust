@@ -1,13 +1,20 @@
 ﻿! concept fyldord = åh, ååh, åhh, ååhh, ah, aah, ahh, aahh, hm, hmm, hmmm, aha, nåh, nå, nåda, nåh da,
-  tjah, joh, pss
+  tjah, joh, pss, bum bum, bummelum, sgu, xD
 
 ! ignore
 {
   > %fyldord
+  > for (fanden|pokker|helvede|satan|søren|sørensen|den da)
 }
 
+# Jeg sagde, gå nu hjem
 > jeg (siger|sagde) +
+> og? så sagde jeg +
 : << <1> >>
 
 > * kan da *
 : << <1> kan <2> >>
+
+# Du er nok sulten, hvad
+> + hvad
+: << <1> >>

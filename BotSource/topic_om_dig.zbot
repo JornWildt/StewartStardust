@@ -21,3 +21,7 @@
 > er du *
 : Ville du da godt have jeg var det?
 +: Det kan du kraftedme godt glemme.
+
+>> vil_du_x_med_mig (emne:aktivitet)
+: Måske.
+: Vil det få mig til at se bedre ud?

@@ -10,6 +10,9 @@
   > hvordan har du det
   > har du det godt
   > er du på toppen  
+  > er alt i orden
+  > er du ok
+  > er du okay
 }
 
 ! pattern (intent = hvad_hedder_du, type = spm)
@@ -77,7 +80,11 @@
 ! pattern (intent = kan_du_lide, type = spm)
 {
   > kan du lide {emne}
+  > kan du lide det
+  > kan du lide den
   > holder du af {emne}
+  > holder du af det
+  > holder du af den
 }
 
 ! pattern (intent = hvad_mener_du_om, type = spm)
@@ -85,6 +92,8 @@
   > hvad mener du om {emne}
   > hvad syntes du om {emne}
   > mener du noget om {emne}
+  > hvad mener du om det
+  > hvad syntes du om det
 }
 
 ! pattern (intent = hvor_blev_du_født, type = spm)
@@ -101,4 +110,31 @@
   > hvad kan du gøre
   > hvad kan du lave
   > hvilke evner har du
+}
+
+
+# "Vil du gifte dig med mig"
+# "Skal vi spille ludo"
+! pattern (intent = vil_du_x_med_mig, type = spm)
+{
+  > vil du {emne}
+  > vil du {emne} med mig
+  > vil du {emne} sammen med mig
+  > skal vi {emne}
+  > hvad med "at" {emne}
+  > hvad med "at" {emne} med mig
+  > hvad med "at" {emne} sammen med mig
+  > hvad med "at" vi {emne}
+  > hvad med "at" vi {emne} sammen
+  > hvad med "at" vi {emne} nu
+}
+
+# Antag at der tidligere er sat en "intent" og at der her fortsættes med samme intent, men med nyt emne
+! pattern (type = spm)
+{
+  > hvad med {emne}
+  > hvad så med  {emne}
+  > og hvad med {emne}
+  > og hvad så med {emne}
+  > eller {emne}
 }

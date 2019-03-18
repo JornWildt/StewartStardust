@@ -1,0 +1,35 @@
+﻿>> hvad_mener_du_om (emne)
+>> kan_du_lide (emne)
+# Lookup any RDF data available
+! call RDF.Query("
+SELECT ?holdning ?topic
+WHERE
+{
+  ?subj zp:knownby ?emne.
+  OPTIONAL
+  {
+    ?mening zp:emne ?subj.
+    ?mening zp:holdning ?holdning.
+  }
+  OPTIONAL {?subj zp:topic ?topic}
+  FILTER (?emne = lcase(@emne))
+}
+ORDER BY RAND()
+LIMIT 5
+")
+# If the result has a topic associated to it, then try to set that as the current chat topic
+! call RDF.TrySetTopic($_, "topic")
+: <result:{r |<r.holdning>}>
+{Empty}: Ikke noget der kommer dig ved Pinochio
+#{empty}: Hvad fanden i fænghullet er <emne>?
+#{empty}: Aldrig hørt om <emne>. 
+{Empty}: Hvad rager det dig?
+{Empty}: Gå væææk!
+
+>> hvad_mener_du_om
+>> kan_du_lide
+! weight 0.9
+: Hvad?
+: Aner det ikke?
+: Kom tætter på du, så skal jeg vise dig min mening om det ...
+

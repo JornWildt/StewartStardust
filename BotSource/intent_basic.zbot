@@ -11,7 +11,7 @@
 
 ! concept hilsen = hej, hej med dig, dav, davs, hejsa, goddag, 
   god dag, mojn, godmorgen, god morgen, morgen, halløj, 
-  vær hilset, hallo, hey, wolla, yo, skål
+  vær hilset, hallo, hey, wolla, yo, skål, skjål
 
 ! pattern (intent = hilsen, type = udråb)
 {
@@ -85,6 +85,16 @@
 ! pattern (intent = kendt_ord)
 {
   > {emne}
+}
+
+! pattern (intent = forstået)
+{
+  > aha
+  > ok
+  > okay
+  > det kan jeg se
+  > det forstår jeg
+  > nu forstår jeg det
 }
 
 ! pattern (intent = test, type = udsagn)

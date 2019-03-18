@@ -38,6 +38,12 @@
   > sejt  
   > xD
   > cool
+  > så for søren
+  > for søren da
+  > for sørensen da
+  > omg
+  > oh my god
+  > du bliver jo ved
 }
 
 ! pattern (intent = afventende, type = udråb, holdning = nul)
@@ -52,6 +58,7 @@
   > der kan man bare se
   > ser man det
   > javel ja  
+  > Bum bum
 }
 
 ! pattern (intent = tvivlende, type = udråb, holdning = nul)
@@ -128,18 +135,17 @@
   > shit
 }
 
-! pattern (intent = det_lyder_godt, type = udråb)
+! pattern (intent = det_lyder_godt:enig, type = udråb)
 {
-  > det lyder godt
-  > fantastisk
+  > lyder %godt
+  > %godt
   > sådan
-  > herligt
-  > super
-  > godt
+  > den er %godt
+  > det er %godt
 }
 
 
-! pattern (intent = det_lyder_skidt, type = udråb)
+! pattern (intent = det_lyder_skidt:uenig, type = udråb)
 {
   > sikke noget møg
   > sikke noget skidt
@@ -149,4 +155,9 @@
   > sådan noget lort
   > øv
   > surt  
+}
+
+! pattern (intent = driller, type = udsagn)
+{
+  > lidt som dig selv
 }

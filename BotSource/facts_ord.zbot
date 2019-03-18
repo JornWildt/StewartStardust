@@ -11,3 +11,9 @@
     intro: "Et adjektiv - eller tillægsord - er et ord som beskriver andre koncepter.".
 }
 
+! define (type, subst)
+{
+  aktivitet:
+    er: "er noget man kan gøre.".
+}
+
