@@ -1,4 +1,5 @@
 ﻿>> hvad_hvem_er (emne, erJaNej)
+>> hvad_hvem_er (emne)
 # Lookup any RDF data available
 ! repeatable
 ! call RDF.Query("
@@ -30,7 +31,6 @@ LIMIT 1
 ! call RDF.TrySetTopic($_, "topic")
 : <VisRDFOplysning(erJaNej, first(result).navn, first(result).kommentar, first(result).typeNavn, first(result).typeDefinition, first(result).typeKommentar)>
 {empty}: Hvad fanden ved jeg om <emne>
-{empty}: Det rager ikke dig.
 
 
 >> hvad_hvem_er
