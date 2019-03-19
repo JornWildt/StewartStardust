@@ -16,7 +16,8 @@
 : << <1> kan <2> >>
 
 # Du er nok sulten, hvad
-> + hvad
+# Hvad kan du så
+> + (hvad|så)
 : << <1> >>
 
 # Men spiser du det

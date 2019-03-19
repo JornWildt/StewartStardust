@@ -1,4 +1,4 @@
-﻿! pattern (intent = hvad_hvem_er, type = spm)
+﻿! pattern (intent = hvad_hvem_er, type = spm, emne ?)
 {
   > hvad er {emne}
   > hvad er {emne} for noget
@@ -20,7 +20,7 @@
 }
 
 
-! pattern (intent = hvad_hvem_er, type = spm, erJaNej = ja)
+! pattern (intent = hvad_hvem_er, type = spm, emne ?, erJaNej = ja)
 {
   > kan du forklare {emne} for mig
   > kan du forklare %stedord
@@ -35,7 +35,7 @@
 }
 
 
-! pattern (intent = hvilke_kender_du, type = spm)
+! pattern (intent = hvilke_kender_du, emne ?, type = spm)
 {
   > hvilke {emne} kender du
   > hvilke {emne} findes der
@@ -51,13 +51,13 @@
   > kan du nævne et par {emne}
 }
 
-! pattern (intent = hvor_gammel_er, type = spm)
+! pattern (intent = hvor_gammel_er, emne ?, type = spm)
 {
   > hvor gammel er {emne}
   > hvor mange år er {emne}
 }
 
-! pattern (intent = eksisterer_der, type = spm)
+! pattern (intent = eksisterer_der, emne ?, type = spm)
 {
   > findes {emne}
   > findes der {emne}
@@ -68,12 +68,12 @@
   > tror du "at" {emne} findes
 }
 
-! pattern (intent = har_du_set, type = spm)
+! pattern (intent = har_du_set, emne ?, type = spm)
 {
-  > har du set {noget}
-  > har du nogensinde set {noget}
-  > er du stødt på {noget}
-  > er du nogensinde stødt på {noget}
+  > har du set {emne}
+  > har du nogensinde set {emne}
+  > er du stødt på {emne}
+  > er du nogensinde stødt på {emne}
 }
 
 ! pattern (intent = hvorfor, type = spm)
@@ -145,4 +145,14 @@
   > og i morgen
   > hvad bliver det i morgen
   > hvad sker der så i morgen
+}
+
+# Antag at der tidligere er sat en "intent" og at der her fortsættes med samme intent, men med nyt emne
+! pattern (type = spm, intent ?)
+{
+  > hvad med {emne}
+  > hvad så med  {emne}
+  > og hvad med {emne}
+  > og hvad så med {emne}
+  > eller {emne}
 }

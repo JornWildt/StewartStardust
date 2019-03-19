@@ -128,13 +128,3 @@
   > hvad med "at" vi {emne} sammen
   > hvad med "at" vi {emne} nu
 }
-
-# Antag at der tidligere er sat en "intent" og at der her fortsættes med samme intent, men med nyt emne
-! pattern (type = spm)
-{
-  > hvad med {emne}
-  > hvad så med  {emne}
-  > og hvad med {emne}
-  > og hvad så med {emne}
-  > eller {emne}
-}

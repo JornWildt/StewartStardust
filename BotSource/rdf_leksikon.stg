@@ -5,13 +5,15 @@
 %>
 
 
-VisRDFOplysning(erBekreft, navn, kommentar, typeNavn, typeDefinition, typeKommentar) ::= <<
+VisRDFOplysning(erJaNej, navn, kommentar, typeNavn, typeDefinition, typeKommentar) ::= <%
+[<erJaNej>, <navn>, <kommentar>, <typeNavn>, <typeDefinition>, <typeKommentar>]
 <if(navn)>
-  <if(erBekreft)>Jeg kender godt <navn>.<endif>
   <if(kommentar)><kommentar>
-  <elseif(type_holdning)><typeKommentar>
+  <elseif(typeKommentar)><typeKommentar>
+  <elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
+  <elseif(typeDefinition)><navn> <typeDefinition>
   <else>Hvad?<endif>
 <else>
   HVAD?
 <endif>
->>
+%>
