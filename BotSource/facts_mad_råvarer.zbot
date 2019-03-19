@@ -1,35 +1,35 @@
 ﻿! define (type, subst)
 {
   ingrediens (ingrediensen, ingredienser, ingredienserne):
-    er: "er noget der indgår i en opskrift.".
+    definition: "er noget der indgår i en opskrift.".
   råvare (råvaren, råvarer, råvarerne):
-    er: "er det vi bruger til at producere noget fra bunden af.".
+    definition: "er det vi bruger til at producere noget fra bunden af.".
   spiselig:
-    er: "er noget der kan spises.".
+    definition: "er noget der kan spises.".
   drikkeligt:
-    er: "noget der kan drikkes.".
+    definition: "noget der kan drikkes.".
   madvare:
-    er: "er noget der kan spises.".
+    definition: "er noget der kan spises.".
   fisk:
-    er: "er dyr der svømmer i vandet (og som vi gerne spiser).".
+    definition: "er dyr der svømmer i vandet (og som vi gerne spiser).".
   pålæg:
-    er: "er det vi lægger eller smører på vores smørrebrød.".
+    definition: "er det vi lægger eller smører på vores smørrebrød.".
   frugt:
-    er: "er noget der vokser på træer og buske. Der er mange frugter som kan spise og smager både sødt og godt.".
+    definition: "er noget der vokser på træer og buske. Der er mange frugter som kan spise og smager både sødt og godt.".
   grøntsag:
-    er: "er planter vi spiser.".
+    definition: "er planter vi spiser.".
   drikkevare (drikkevarer):
-    er: "er noget vi drikker.".
+    definition: "er noget vi drikker.".
   spiritus:
-    er: "er betegnelsen for forskellige former for alkoholiske drikke.".
+    definition: "er betegnelsen for forskellige former for alkoholiske drikke.".
   ost:
-    er: "er lavet på gammel sur mælk!".
+    definition: "er lavet på gammel sur mælk!".
   krydderi:
-    er: "er noget vi kommer i maden for at give en særlig smag. Ofte er det vel tørrede urter.".
+    definition: "er noget vi kommer i maden for at give en særlig smag. Ofte er det vel tørrede urter.".
   urt (krydderurt, urter, krydderurter):
-    er: "er en lille plante.".
+    definition: "er en lille plante.".
   nød (nødder):
-    er: "er hårde frugtkerner.".
+    definition: "er hårde frugtkerner.".
 }
 
 ! define (råvare, spiselig, madvare, nød, subst)

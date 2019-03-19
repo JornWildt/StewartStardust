@@ -10,5 +10,5 @@
 ! define (type, subst)
 {
   film:
-    er: "er en film".
+    definition: "er en film".
 }

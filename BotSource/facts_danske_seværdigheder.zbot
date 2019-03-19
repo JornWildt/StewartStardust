@@ -1,11 +1,11 @@
 ﻿! define (type, subst)
 {
   seværdighed:
-    er: "er en seværdighed".
+    definition: "er en seværdighed".
   skulptur:
-    er: "er en skulptur".
+    definition: "er en skulptur".
   bygning:
-    er: "er en bygning".
+    definition: "er en bygning".
 }
 
 

@@ -1,7 +1,7 @@
-! define (type, subst)
+ï»¿! define (type, subst)
 {
   insekt:
-    er: "er et insekt".
+    definition: "er et insekt".
 }
 
 
@@ -31,7 +31,7 @@
   "bille" (billen, biller, billerne):
     dyreklasse: insekt.
 
-  "ørentvist" (ørentvisten, ørentviste, ørentvistene):
+  "Ã¸rentvist" (Ã¸rentvisten, Ã¸rentviste, Ã¸rentvistene):
     dyreklasse: insekt.
 
   "kakerlak" (kakerlakken, kakerlakker, kakerlakkerne):
@@ -46,7 +46,7 @@
   "guldsmed" (guldsmeden, guldsmede, guldsmedene):
     dyreklasse: insekt.
     
-  "græshoppe" (græshoppen, græshopper, græshopperne):
+  "grÃ¦shoppe" (grÃ¦shoppen, grÃ¦shopper, grÃ¦shopperne):
     dyreklasse: insekt.
     
   "lus" (lusen, lusene):

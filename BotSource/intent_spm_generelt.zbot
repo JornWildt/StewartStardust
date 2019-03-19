@@ -1,4 +1,4 @@
-﻿! pattern (intent = hvad_hvem_er, type = spm, stil = åben)
+﻿! pattern (intent = hvad_hvem_er, type = spm)
 {
   > hvad er {emne}
   > hvad er {emne} for noget
@@ -20,7 +20,7 @@
 }
 
 
-! pattern (intent = hvad_hvem_er, type = spm, stil = bekræft)
+! pattern (intent = hvad_hvem_er, type = spm, erJaNej = ja)
 {
   > kan du forklare {emne} for mig
   > kan du forklare %stedord

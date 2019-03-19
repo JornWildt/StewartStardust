@@ -1,42 +1,42 @@
-! define (type, subst)
+ï»¿! define (type, subst)
 {
   krybdyr:
-    er: "er et krybdyr".
+    definition: "er et krybdyr".
 }
 
 ! define (dyr, krybdyr, subst)
 {
   "krokodille" (krokodillen, krokodiller, krokodillerne):
-    intro: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og øjne, ører og næsebor placeret øverst på hovedet. Krokodillen svømmer godt og kan desuden bevæge sig på land.";
+    intro: "Krokodillen er et stort, kraftigt bygget, firbenlignende krybdyr med lang, flad snude og Ã¸jne, Ã¸rer og nÃ¦sebor placeret Ã¸verst pÃ¥ hovedet. Krokodillen svï¿½mmer godt og kan desuden bevï¿½ge sig pï¿½ land.";
     dyreklasse: krybdyr;
-    føde: <dyr>;
+    fÃ¸de: <dyr>;
     levested: <Afrika>, <Asien>, <Sydamerika>.
 
   "firben" (firbenet, firbenene):
-    føde: <insekt>;
+    fÃ¸de: <insekt>;
     dyreklasse: krybdyr.
 
   "salamander" (salamanderen):
-    føde: <insekt>;
+    fÃ¸de: <insekt>;
     dyreklasse: krybdyr.
 
-  "frø" (frøen, frøer, frøerne, "brun frø", "grøn frø", "løvfrø", "klokkefrø"):
-    føde: <insekt>;
+  "frÃ¸" (frÃ¸en, frÃ¸er, frÃ¸erne, "brun frÃ¸", "grÃ¸n frÃ¸", "lÃ¸vfrÃ¸", "klokkefrÃ¸"):
+    fÃ¸de: <insekt>;
     dyreklasse: krybdyr.
 
   "tudse" (tudsen, tudser, tudserne):
-    føde: <insekt>;
+    fÃ¸de: <insekt>;
     dyreklasse: krybdyr.
 
   "hugorm" (hugormen, hugorme, hugormene):
-    føde: <dyr>;
+    fÃ¸de: <dyr>;
     dyreklasse: krybdyr.
 
   "slange" (slangen, slanger, slangerne):
-    føde: <dyr>;
+    fÃ¸de: <dyr>;
     dyreklasse: krybdyr.
 
   "snog" (snogen, snoge, snogene):
-    føde: <dyr>;
+    fÃ¸de: <dyr>;
     dyreklasse: krybdyr.
 }

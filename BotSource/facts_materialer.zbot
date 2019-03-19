@@ -1,7 +1,7 @@
 ﻿! define (type)
 {
   materiale:
-    er: "er et materiale".
+    definition: "er et materiale".
 }
 
 ! define (materiale)

@@ -5,9 +5,9 @@
 ! define (type, subst)
 {
   ugedag:
-    er: "er en dag i ugen.".
+    definition: "er en dag i ugen.".
   måned:
-    er: "en af årets tolv måneder.".
+    definition: "en af årets tolv måneder.".
 }
 
 ! define (ugedag)

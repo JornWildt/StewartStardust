@@ -3,3 +3,9 @@
 <elseif(type_holdning)><type_holdning>
 <else>Hvad?<endif>
 %>
+
+
+VisRDFOplysning(erBekreft, navn, kommentar, typeNavn, typeDefinition, typeKommentar) ::= <<
+[<erBekreft>, <navn>, <kommentar>, <typeNavn>, <typeDefinition>, <typeKommentar>].
+<if(erBekreft && navn)>Jeg kender godt <navn>.<endif>
+>>

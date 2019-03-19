@@ -1,17 +1,26 @@
->> hvad_hvem_er (emne,stil)
+Ôªø>> hvad_hvem_er (emne, erJaNej)
 # Lookup any RDF data available
 ! repeatable
 ! call RDF.Query("
-SELECT ?name ?typeName ?intro ?typeEr ?topic
+SELECT ?navn ?kommentar ?typeNavn ?typeDefinition ?typeKommentar ?topic
 WHERE
 {
   ?subj zp:knownby ?emne.
-  ?subj rdfs:label ?name.
-  ?subj rdf:type ?type.
-  OPTIONAL {?subj zp:intro ?intro}
-  OPTIONAL {?type rdfs:label ?typeName}
-  OPTIONAL {?type zp:er ?typeEr}
-  OPTIONAL {?subj zp:topic ?topic}
+  ?subj rdfs:label ?navn.
+  OPTIONAL
+  {
+    ?mening zp:emne ?subj.
+    ?mening zp:kommentar ?kommentar.
+  }
+  OPTIONAL { ?subj rdf:type ?type. }
+  OPTIONAL { ?type rdfs:label ?typeNavn}
+  OPTIONAL { ?type zp:definition ?typeDefinition }
+  OPTIONAL 
+  {
+    ?typeMening zp:emne ?type.
+    ?typeMening zp:kommentar ?typeKommentar.
+  }
+  OPTIONAL { ?subj zp:topic ?topic }
   FILTER (?emne = lcase(@emne))
 }
 ORDER BY RAND()
@@ -19,14 +28,14 @@ LIMIT 1
 ")
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
-: (stil: <stil>). <result:{r |<if(r.intro)><r.intro><elseif(r.typeEr)><r.name; format="UF"> <r.typeEr><elseif(r.typeName)><r.name>: <r.typeName>.<endif>}>
+: <VisRDFOplysning(erJaNej, first(result).navn, first(result).kommentar, first(result).typeNavn, first(result).typeDefinition, first(result).typeKommentar)>
 {empty}: Hvad fanden ved jeg om <emne>
 {empty}: Det rager ikke dig.
 
 
 >> hvad_hvem_er
 ! repeatable
-: Tror du jeg ved det mÂske?
+: Tror du jeg ved det m√•ske?
 : Sig mig ligner jeg et leksikon? Eller ved du heller ikke hvad det er - hva?
 
 
@@ -45,13 +54,13 @@ WHERE
 ORDER BY RAND()
 LIMIT 5
 ")
-:Det kunne sgu da godt vÊre <result:{r | <r.name>};separator=", ">
+:Det kunne sgu da godt vÔøΩre <result:{r | <r.name>};separator=", ">
 {empty}: Ikke en daddel mand
-{empty}: Ska du vÊrre frÊk?
+{empty}: Ska du vÔøΩrre frÔøΩk?
 
 >> hvilke_kender_du
 ! repeatable
-: Det er sgu' da for Ândsvagt.
+: Det er sgu' da for ÔøΩndsvagt.
 : Skal vi ikke hellere tage en bajer.
 
 
@@ -93,10 +102,10 @@ LIMIT 1
 ! call RDF.TrySetTopic($_, "topic")
 : <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"> vil jeg mene?<else>Hmmm...<endif>
 : <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"><else>Tjah?<endif>
-: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)>Skulle det mon vùre <svar>?<else>ùhm...<endif>
-{empty}: FÂrk man - nu sejler det sgu da.
+: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)>Skulle det mon v√¶re <svar>?<else>√∏hm...<endif>
+{empty}: F√•rk man - nu sejler det sgu da.
 
 >> { intent = spm_attr_subj }
 ! repeatable
-: ¯h ...
+: √∏h ...
 : hvad?

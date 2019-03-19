@@ -1,0 +1,6 @@
+! define (person)
+{
+  terkel ("Terkel Mogensen"):.
+  beate ("Beate Habakuk Stenstrøm", "Beate Stenstrøm"):.
+  leon ("Leon Gungadin Mogensen", "Leon Mogensen"):.
+}
