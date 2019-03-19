@@ -1,0 +1,12 @@
+﻿! define (mening)
+{
+  $: emne: <Oslo>;
+    kommentar: "Hvad vil du med Oslo?".
+
+  ### Typer
+  
+  $: emne: <sted>;
+    kommentar: "Jeg har altid elsket at rejse\nDu ved ... Shanghai, Thailand, bordeller, damer.".
+  $: emne: <sprog>;
+    kommentar: "Fransk, yessir!".
+}

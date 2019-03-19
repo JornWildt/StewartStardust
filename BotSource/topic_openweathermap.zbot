@@ -51,7 +51,7 @@
   +: Og vinden bliver op til <tomorrow.windSpeed> m/s fra <MapWindDir(tomorrow.windDir)>.
   {error}: Hmmm, det ved jeg sgu' ikke.
 
-  >> hvor_er_det
+  >> hvor_er
   : I <session.sted>. Hvad troede du?
   ! answer
   {

@@ -1,4 +1,4 @@
-! define (type, subst)
+ï»¿! define (type, subst)
 {
   by (byer):
     er: "er en by";
@@ -9,7 +9,7 @@
     
   land (lande):
     er: "er et land";
-    intro: "Et land er et politisk bestemt geografisk område.".
+    intro: "Et land er et politisk bestemt geografisk omrÃ¥de.".
 }
 
 
@@ -39,6 +39,14 @@
   > hvor finder jeg {emne} henne
   > hvor kan jeg finde {emne}
   > hvor kan jeg finde {emne} henne
+  > hvor er det
+  > hvor er det henne
+  > hvor henne er det
+  > hvor ligger det
+  > hvor ligger det henne
+  > hvor henne
+  > hvor
+
 }
 
 
@@ -64,7 +72,7 @@ WHERE
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
 : <emne> ligger i <result:{r | <r.name>}>
-{empty}: Jeg ved desværre ikke hvor {emne} er.
+{empty}: Jeg ved desvÃ¦rre ikke hvor {emne} er.
 {empty}: Det ved jeg ikke.
 {empty}: Hvis bare jeg vidste det.
 {empty}: Hmmm.
@@ -87,7 +95,7 @@ LIMIT 5
 ")
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
-: Det kunne være <result:{r | <r.name>};separator=", ">.
+: Det kunne vÃ¦re <result:{r | <r.name>};separator=", ">.
 {empty}: Jeg ved ikke lige hvad der ligger i <emne>.
 {empty}: Ikke noget jeg kender til.
 {empty}: Det ved jeg ikke.
@@ -114,11 +122,11 @@ LIMIT 1
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
 : Ja
-: Ja, <emne> ligger vist nok i <sted>.
+: Ja, <emne; format="UF"> ligger vist nok i <sted; format="UF">.
 : Det vil jeg mene
 {empty}: Nej
 {empty}: Nej, det mener jeg ikke.
-{empty}: Næh, ikke mig bekendt.
+{empty}: NÃ¦h, ikke mig bekendt.
 {empty}: Det vil jeg ikke mene.
 
 

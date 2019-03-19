@@ -1,0 +1,5 @@
+﻿VisRDFHoldning(holdning, type_holdning) ::= <%
+<if(holdning)><holdning>
+<elseif(type_holdning)><type_holdning>
+<else>Hvad?<endif>
+%>

@@ -1,5 +1,4 @@
-Ôªø>> hvad_hvem_er (emne)
->> kendt_ord (emne)
+>> hvad_hvem_er (emne,stil)
 # Lookup any RDF data available
 ! repeatable
 ! call RDF.Query("
@@ -20,14 +19,14 @@ LIMIT 1
 ")
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
-: <result:{r |<if(r.intro)><r.intro><elseif(r.typeEr)><r.name; format="UF"> <r.typeEr><elseif(r.typeName)><r.name>: <r.typeName>.<endif>}>
+: (stil: <stil>). <result:{r |<if(r.intro)><r.intro><elseif(r.typeEr)><r.name; format="UF"> <r.typeEr><elseif(r.typeName)><r.name>: <r.typeName>.<endif>}>
 {empty}: Hvad fanden ved jeg om <emne>
 {empty}: Det rager ikke dig.
 
 
 >> hvad_hvem_er
 ! repeatable
-: Tror du jeg ved det m√•ske?
+: Tror du jeg ved det mÂske?
 : Sig mig ligner jeg et leksikon? Eller ved du heller ikke hvad det er - hva?
 
 
@@ -46,13 +45,13 @@ WHERE
 ORDER BY RAND()
 LIMIT 5
 ")
-:Det kunne sgu da godt v√¶re <result:{r | <r.name>};separator=", ">
+:Det kunne sgu da godt vÊre <result:{r | <r.name>};separator=", ">
 {empty}: Ikke en daddel mand
-{empty}: Ska du v√¶rre fr√¶k?
+{empty}: Ska du vÊrre frÊk?
 
 >> hvilke_kender_du
 ! repeatable
-: Det er sgu' da for √•ndsvagt.
+: Det er sgu' da for Ândsvagt.
 : Skal vi ikke hellere tage en bajer.
 
 
@@ -94,10 +93,10 @@ LIMIT 1
 ! call RDF.TrySetTopic($_, "topic")
 : <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"> vil jeg mene?<else>Hmmm...<endif>
 : <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)><svar; format="UF"><else>Tjah?<endif>
-: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)>Skulle det mon vÔøΩre <svar>?<else>ÔøΩhm...<endif>
-{empty}: F√•rk man - nu sejler det sgu da.
+: <if(svar_tekst)><svar_tekst><elseif(svar_simpel)><svar_simpel; format="UF"><elseif(svar)>Skulle det mon vùre <svar>?<else>ùhm...<endif>
+{empty}: FÂrk man - nu sejler det sgu da.
 
 >> { intent = spm_attr_subj }
 ! repeatable
-: √∏h ...
+: ¯h ...
 : hvad?

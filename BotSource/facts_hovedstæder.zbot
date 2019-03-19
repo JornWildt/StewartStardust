@@ -1,4 +1,4 @@
-! define (by, sted)
+ï»¿! define (by, sted)
 {
     "Abidjan":
       sted: <Elfenbenskysten>.
@@ -30,10 +30,10 @@
       sted: <Eritrea>.
     "Astana":
       sted: <Kasakhstan>.
-    "Asunción":
+    "AsunciÃ³n":
       sted: <Paraguay>.
     "Athen":
-      sted: <Grækenland>.
+      sted: <GrÃ¦kenland>.
     "Bagdad":
       sted: <Irak>.
     "Baku":
@@ -66,9 +66,9 @@
       sted: <Kirgisistan>.
     "Bissau":
       sted: <Guinea Bissau>.
-    "Bogotá":
+    "BogotÃ¡":
       sted: <Colombia>.
-    "Brasília":
+    "BrasÃ­lia":
       sted: <Brasilien>.
     "Bratislava":
       sted: <Slovakiet>.
@@ -85,7 +85,7 @@
     "Bujumbura":
       sted: <Burundi>.
     "Bukarest":
-      sted: <Rumænien>.
+      sted: <RumÃ¦nien>.
     "Canberra":
       sted: <Australien>.
     "Caracas":
@@ -105,11 +105,11 @@
     "Dakar":
       sted: <Senegal>.
     "Dalap Uliga Darrit":
-      sted: <Marshalløerne>.
+      sted: <MarshallÃ¸erne>.
     "Damaskus":
       sted: <Syrien>.
     "Dili":
-      sted: <Østtimor>.
+      sted: <Ã˜sttimor>.
     "Djibouti":
       sted: <Djibouti>.
     "Dodoma":
@@ -139,7 +139,7 @@
     "Helsingfors":
       sted: <Finland>.
     "Honiara":
-      sted: <Salomonøerne>.
+      sted: <SalomonÃ¸erne>.
     "Islamabad":
       sted: <Pakistan>.
     "Jakarta":
@@ -172,7 +172,7 @@
       sted: <Malaysia>.
     "Kuwait City":
       sted: <Kuwait>.
-    "København":
+    "KÃ¸benhavn":
       sted: <Danmark>.
     "Libreville":
       sted: <Gabon>.
@@ -184,7 +184,7 @@
       sted: <Portugal>.
     "Ljubljana":
       sted: <Slovenien>.
-    "Lomé":
+    "LomÃ©":
       sted: <Togo>.
     "London":
       sted: <Storbritannien>.
@@ -197,7 +197,7 @@
     "Madrid":
       sted: <Spanien>.
     "Malabo":
-      sted: <Ækvatorialguinea>.
+      sted: <Ã†kvatorialguinea>.
     "Male":
       sted: <Maldiverne>.
     "Managua":
@@ -251,7 +251,7 @@
     "Nuku'alofa":
       sted: <Tonga>.
     "Nuuk":
-      sted: <Grønland>.
+      sted: <GrÃ¸nland>.
     "Oslo":
       sted: <Norge>.
     "Ottawa":
@@ -308,20 +308,20 @@
       sted: <Grenada>.
     "Saint Johns":
       sted: <Antigua og Barbuda>.
-    "San José":
+    "San JosÃ©":
       sted: <Costa Rica>.
     "San Marino":
       sted: <San Marino>.
     "San Salvador":
       sted: <El Salvador>.
-    "Sanaá":
+    "SanaÃ¡":
       sted: <Yemen>.
     "Santiago de Chile":
       sted: <Chile>.
     "Santo Domingo":
       sted: <Dominikanske Republik>.
-    "São Tomé":
-      sted: <São Tomé og Príncipe>.
+    "SÃ£o TomÃ©":
+      sted: <SÃ£o TomÃ© og PrÃ­ncipe>.
     "Sarajevo":
       sted: <Bosnien Hercegovina>.
     "Seoul":
@@ -360,8 +360,8 @@
       sted: <Albanien>.
     "Tokyo":
       sted: <Japan>.
-    "Tórshavn" (Torshavn):
-      sted: <Færøerne>.
+    "TÃ³rshavn" (Torshavn):
+      sted: <FÃ¦rÃ¸erne>.
     "Tripoli":
       sted: <Libyen>.
     "Tunis":
@@ -385,10 +385,10 @@
     "Wellington":
       sted: <New Zealand>.
     "Wien":
-      sted: <Østrig>.
+      sted: <Ã˜strig>.
     "Windhoek":
       sted: <Namibia>.
-    "Yaoundé":
+    "YaoundÃ©":
       sted: <Cameroun>.
     "Yaren":
       sted: <Nauru>.

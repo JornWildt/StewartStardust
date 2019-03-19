@@ -18,3 +18,18 @@
 # Du er nok sulten, hvad
 > + hvad
 : << <1> >>
+
+# Men spiser du det
+# Men det gør de andre ikke
+# Men det kan du da ikke mene
+# Men hvad er det
+> men +
+: << <1> >>
+
+> sig mig +
+> sig mig engang +
+> sig mig lige engang +
+> fortæl mig +
+> fortæl mig lige +
+> fortæl mig lige engang +
+: << <1> >>

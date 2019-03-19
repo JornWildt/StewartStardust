@@ -1,29 +1,36 @@
 ﻿>> hvad_mener_du_om (emne)
 >> kan_du_lide (emne)
+>> kendt_ord (emne)
 # Lookup any RDF data available
 ! call RDF.Query("
-SELECT ?holdning ?topic
+SELECT ?kommentar ?topic ?type_kommentar
 WHERE
 {
   ?subj zp:knownby ?emne.
   OPTIONAL
   {
     ?mening zp:emne ?subj.
-    ?mening zp:holdning ?holdning.
+    ?mening zp:kommentar ?kommentar.
+  }
+  OPTIONAL 
+  {
+    ?subj rdf:type ?type.
+    ?type_mening zp:emne ?type.
+    ?type_mening zp:kommentar ?type_kommentar.
   }
   OPTIONAL {?subj zp:topic ?topic}
   FILTER (?emne = lcase(@emne))
 }
 ORDER BY RAND()
-LIMIT 5
+LIMIT 1
 ")
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
-: <result:{r |<r.holdning>}>
-{Empty}: Ikke noget der kommer dig ved Pinochio
+: <VisRDFkommentar(first(result).kommentar, first(result).type_kommentar)>
+#{Empty}: Ikke noget der kommer dig ved Pinochio
 #{empty}: Hvad fanden i fænghullet er <emne>?
 #{empty}: Aldrig hørt om <emne>. 
-{Empty}: Hvad rager det dig?
+#{Empty}: Hvad rager det dig?
 {Empty}: Gå væææk!
 
 >> hvad_mener_du_om

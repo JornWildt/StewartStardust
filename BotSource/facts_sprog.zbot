@@ -6,22 +6,78 @@
 
 ! define (sprog)
 {
+  kinesisk:.
+  spansk:.
+  engelsk:.
+  arabisk:.
+  bengali:.
+  hindi:.
+  russisk:.
+  portugesisk:.
+  japansk:.
+  fransk:.
+  tysk:.
+  javanesisk:.
+  koreansk:.
+  italiensk:.
+  tyrkisk:.
+  vietnamesisk:.
+  indisk:.
+  marathi:.
+  tamil:.
+  urdu:.
+  gujarati:.
+  polsk:.
+  ukrainsk:.
+  persisk:.
+  kannda:.
+  oriya:.
+  panjabi:.
+  sunda:.
+  rumænsk:.
+  maithili:.
+  hausa:.
+  burmesisk:.
+  awadhi:.
+  thai:.
+  hollandsk:.
+  yoruba:.
+  sindi:.
+
   dansk:.
   norsk:.
   svensk:.
   islandsk:.
   grønlandsk:.
-  tysk:.
-  engelsk:.
   skotsk:.
   walisisk:.
-  fransk:.
-  polsk:.
-  hollandsk:.
-  italiensk:.
-  spansk:.
-  portugesisk:. 
   belgisk:.
-  russisk:.
-  kinesisk:.  
+  katalansk:.
+  armensk:.
+  kroatisk:.
+  slovensk:.
+  serbisk:.
+  tjekkisk:.
+  græsk:.
+  færøsk:.
+  estisk:.
+  schweizisk:.
+  finsk:.
+  kantonesisk:.
+  sanskrit:.
+  nepalesisk:.
+  indonesisk:.
+  irsk:.
+  hæbraisk:.
+  albansk:.
+  litauisk:.
+  maori:.
+  makadonsk:.
+  afrikaan:.
+  zulu:.
+  baskisk:.
+  romansk:.
+  cornisk:.
+  manx:.
+  sotho:.
 }
