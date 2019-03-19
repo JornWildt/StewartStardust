@@ -48,10 +48,12 @@
   > snakker %du {sprog}
 }
 
-! pattern (intent = spiser_du, type = spm)
+! pattern (intent = spiser_du, emne ?, type = spm)
 {
   > spiser %du {emne}
+  > spiser %du %stedord
   > kan %du lide {emne}
+  > kan %du lide %stedord
 }
 
 ! pattern (intent = hvor_bor_du, type = spm)
@@ -72,22 +74,21 @@
   > er du bombesikker
 }
 
-! pattern (intent = er_du, type = spm)
+! pattern (intent = er_du, sted ?, type = spm)
 {
   > er du {emne}
+  > er du %stedord
 }
 
-! pattern (intent = kan_du_lide, type = spm)
+! pattern (intent = kan_du_lide, emne ?, type = spm)
 {
   > kan du lide {emne}
-  > kan du lide det
-  > kan du lide den
+  > kan du lide %stedord
   > holder du af {emne}
-  > holder du af det
-  > holder du af den
+  > holder du af %stedord
 }
 
-! pattern (intent = hvad_mener_du_om, type = spm)
+! pattern (intent = hvad_mener_du_om, emne ?, type = spm)
 {
   > hvad mener du om {emne}
   > hvad syntes du om {emne}
@@ -115,12 +116,16 @@
 
 # "Vil du gifte dig med mig"
 # "Skal vi spille ludo"
-! pattern (intent = vil_du_x_med_mig, type = spm)
+! pattern (intent = vil_du_x_med_mig, emne ?, type = spm)
 {
   > vil du {emne}
   > vil du {emne} med mig
   > vil du {emne} sammen med mig
   > skal vi {emne}
+  > vil du det
+  > vil du det med mig
+  > vil du det sammen med mig
+  > skal vi det
   > hvad med "at" {emne}
   > hvad med "at" {emne} med mig
   > hvad med "at" {emne} sammen med mig

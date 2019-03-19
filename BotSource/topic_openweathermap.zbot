@@ -83,15 +83,3 @@
   : Nåh ja, vi kan jo ikke gøre noget ved vejret
 }
 
-
-> qqqq
-! call OWM.Forecast("København")
-! set session.tmp = today.maxTemp
-: L <today.maxTemp>
-
-> zzzz
-: M <session.tmp>
-
-! every "*/10 * * ? * *"
-! call OWM.Forecast("København")
-! set session.tmp = today.maxTemp

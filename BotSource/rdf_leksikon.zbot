@@ -1,5 +1,8 @@
 ﻿>> hvad_hvem_er (emne, erJaNej)
 >> hvad_hvem_er (emne)
+>> hvad_mener_du_om (emne)
+>> kan_du_lide (emne)
+>> kendt_ord (emne)
 # Lookup any RDF data available
 ! repeatable
 ! call RDF.Query("
@@ -30,14 +33,21 @@ LIMIT 1
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
 : <VisRDFOplysning(erJaNej, first(result).navn, first(result).kommentar, first(result).typeNavn, first(result).typeDefinition, first(result).typeKommentar)>
-{empty}: Hvad fanden ved jeg om <emne>
+{empty}: Hvad fanden ved jeg om <emne>!
+#{empty}: Aldrig hørt om <emne>. 
 
 
+# Kan ikke identificere "emne"
 >> hvad_hvem_er
+>> hvad_mener_du_om
+>> kan_du_lide
+>> kendt_ord
 ! repeatable
 : Tror du jeg ved det måske?
 : Sig mig ligner jeg et leksikon? Eller ved du heller ikke hvad det er - hva?
 
+
+### HVILKE KENDER DU ####
 
 >> hvilke_kender_du (emne)
 ! repeatable
@@ -54,18 +64,18 @@ WHERE
 ORDER BY RAND()
 LIMIT 5
 ")
-:Det kunne sgu da godt v�re <result:{r | <r.name>};separator=", ">
+:Det kunne sgu da godt være <result:{r | <r.name>};separator=", ">
 {empty}: Ikke en daddel mand
-{empty}: Ska du v�rre fr�k?
+{empty}: Ska du værre fræk?
 
 >> hvilke_kender_du
 ! repeatable
-: Det er sgu' da for �ndsvagt.
+: Det er sgu' da for åndsvagt.
 : Skal vi ikke hellere tage en bajer.
 
 
 
-###########################
+#### HVAD XXX YYY ####
 
 # hvad spiser mus
 >> spm_attr_subj (attr:verb, subj:subst)
