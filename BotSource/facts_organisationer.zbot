@@ -1,5 +1,5 @@
 ! define (type, subst)
 {
   organisation:
-    definition: "er en organisation.".
+    element: "er en organisation.".
 }

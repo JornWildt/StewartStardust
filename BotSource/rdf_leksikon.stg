@@ -1,17 +1,9 @@
-﻿VisRDFHoldning(kommentar, typeKommentar) ::= <%
-<if(kommentar)><kommentar>
-<elseif(type_holdning)><typeKommentar>
-<else>Hvad?<endif>
-%>
-
-
-VisRDFOplysning(erJaNej, navn, kommentar, typeNavn, typeDefinition, typeKommentar) ::= <%
-[<erJaNej>, <navn>, <kommentar>, <typeNavn>, <typeDefinition>, <typeKommentar>]
+﻿VisRDFOplysning(erJaNej, navn, kommentar, typeNavn, typeBeskriver, typeKommentar) ::= <%
 <if(navn)>
   <if(kommentar)><kommentar>
-  <elseif(typeKommentar)><typeKommentar>
   <elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
-  <elseif(typeDefinition)><navn> <typeDefinition>
+  <elseif(typeKommentar)><typeKommentar>
+  <elseif(typeBeskriver)><navn> <typeBeskriver>
   <else>Hvad?<endif>
 <else>
   HVAD?

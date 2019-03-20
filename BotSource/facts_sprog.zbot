@@ -1,7 +1,7 @@
 ﻿! define (type, subst)
 {
   sprog:
-    definition: "er et sprog.".
+    element: "er et sprog.".
 }
 
 ! define (sprog)

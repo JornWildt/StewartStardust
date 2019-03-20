@@ -1,7 +1,7 @@
 ﻿! define (type, subst)
 {
   krybdyr:
-    definition: "er et krybdyr".
+    element: "er et krybdyr".
 }
 
 ! define (dyr, krybdyr, subst)

@@ -82,8 +82,8 @@
 ! define (type)
 {
   politiker (politikere):
-    definition: "er politiker.".
+    element: "er politiker.".
   politisk_parti (parti, partier, "politiske partier"):
-    definition: "er et politisk parti.".
+    element: "er et politisk parti.".
 }
 

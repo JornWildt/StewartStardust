@@ -1,15 +1,15 @@
 ﻿! define (type, subst)
 {
   mad_ret (ret):
-    definition: "er noget man spiser.".
+    element: "er noget man spiser.".
   opskrift:
-    definition: "er en beskrivelse af hvordan man fremstiller noget - fx et måltid mad.".
+    element: "er en beskrivelse af hvordan man fremstiller noget - fx et måltid mad.".
   hovedret:
-    definition: "er den vigtigste del af et måltid.".
+    element: "er den vigtigste del af et måltid.".
   kage:
-    definition: "er sødt bagværk.".
+    element: "er sødt bagværk.".
   dessert:
-    definition: "er en noget vi spiser efter hovedretten. Typisk noget sødt og lækkert.".
+    element: "er en noget vi spiser efter hovedretten. Typisk noget sødt og lækkert.".
 }
 
 

@@ -1,10 +1,10 @@
 ﻿! define (type)
 {
   grundstof:
-    definition: "er et grundstof.";
+    element: "er et grundstof.";
     intro: "Et grundstof er et kemisk stof som udelukkende består af én slags atomer - fx jern eller brint.\n+Bacon er fx en slags grundstof i maden ;-)".
   metal:
-    definition: "er et metal.".    
+    element: "er et metal.".    
 }
 
 ! define (grundstof, materiale, subst)

@@ -1,7 +1,7 @@
 ﻿! define (type, subst)
 {
   fugl:
-    definition: "er en fugl".
+    element: "er en fugl".
 }
 
 

@@ -1,35 +1,35 @@
 ﻿! define (type, subst)
 {
   ingrediens (ingrediensen, ingredienser, ingredienserne):
-    definition: "er noget der indgår i en opskrift.".
+    element: "er noget der indgår i en opskrift.".
   råvare (råvaren, råvarer, råvarerne):
-    definition: "er det vi bruger til at producere noget fra bunden af.".
+    element: "er det vi bruger til at producere noget fra bunden af.".
   spiselig:
-    definition: "er noget der kan spises.".
+    element: "er noget der kan spises.".
   drikkeligt:
-    definition: "noget der kan drikkes.".
+    element: "noget der kan drikkes.".
   madvare:
-    definition: "er noget der kan spises.".
+    element: "er noget der kan spises.".
   fisk:
-    definition: "er dyr der svømmer i vandet (og som vi gerne spiser).".
+    element: "er dyr der svømmer i vandet (og som vi gerne spiser).".
   pålæg:
-    definition: "er det vi lægger eller smører på vores smørrebrød.".
+    element: "er det vi lægger eller smører på vores smørrebrød.".
   frugt:
-    definition: "er noget der vokser på træer og buske. Der er mange frugter som kan spise og smager både sødt og godt.".
+    element: "er noget der vokser på træer og buske. Der er mange frugter som kan spise og smager både sødt og godt.".
   grøntsag:
-    definition: "er planter vi spiser.".
+    element: "er planter vi spiser.".
   drikkevare (drikkevarer):
-    definition: "er noget vi drikker.".
+    element: "er noget vi drikker.".
   spiritus:
-    definition: "er betegnelsen for forskellige former for alkoholiske drikke.".
+    element: "er betegnelsen for forskellige former for alkoholiske drikke.".
   ost:
-    definition: "er lavet på gammel sur mælk!".
+    element: "er lavet på gammel sur mælk!".
   krydderi:
-    definition: "er noget vi kommer i maden for at give en særlig smag. Ofte er det vel tørrede urter.".
+    element: "er noget vi kommer i maden for at give en særlig smag. Ofte er det vel tørrede urter.".
   urt (krydderurt, urter, krydderurter):
-    definition: "er en lille plante.".
+    element: "er en lille plante.".
   nød (nødder):
-    definition: "er hårde frugtkerner.".
+    element: "er hårde frugtkerner.".
 }
 
 ! define (råvare, spiselig, madvare, nød, subst)

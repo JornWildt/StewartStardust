@@ -1,10 +1,10 @@
 ﻿! define (type, subst)
 {
   dyr:
-    definition: "er et dyr.".
+    element: "er et dyr.".
     
   pattedyr:
-    definition: "er et pattedyr".
+    element: "er et pattedyr".
 }
 
 

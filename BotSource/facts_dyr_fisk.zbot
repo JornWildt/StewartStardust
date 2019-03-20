@@ -1,7 +1,7 @@
 ﻿! define (type, subst)
 {
   fisk:
-    definition: "er et dyr.".
+    element: "er et dyr.".
 }
 
 
