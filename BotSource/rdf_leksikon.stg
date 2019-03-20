@@ -1,11 +1,16 @@
 ﻿VisRDFOplysning(erJaNej, navn, kommentar, typeNavn, typeBeskriver, typeKommentar) ::= <%
-<if(navn)>
-  <if(kommentar)><kommentar>
-  <elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
-  <elseif(typeKommentar)><typeKommentar>
-  <elseif(typeBeskriver)><navn> <typeBeskriver>
-  <else>Hvad?<endif>
-<else>
-  HVAD?
+<if(kommentar)><kommentar>
+<elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
+<elseif(typeKommentar)><typeKommentar>
+<elseif(typeBeskriver)><navn> <typeBeskriver>
+<else>Hvad?
+<endif>
+%>
+
+
+VisRDFBesogt(navn, oplevelse, kommentar) ::= <%
+<if(oplevelse)><oplevelse>
+<elseif(kommentar)><kommentar>
+<else>Du ved - jeg har rejst på alle have. Men jeg husker sgu' ikke lige <navn; format="UF">
 <endif>
 %>

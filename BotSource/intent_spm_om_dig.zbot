@@ -28,6 +28,14 @@
   > hvad arbejder %du med
 }
 
+! pattern (intent = har_du_besøgt, emne ?, type = spm)
+{
+  > har %du været i {emne}
+  > har %du været der
+  > har %du besøgt {emne}
+  > har %du besøgt det
+}
+
 ! pattern (intent = hvem_er_du, type = spm)
 {
   > hvem er %du
@@ -74,7 +82,7 @@
   > er du bombesikker
 }
 
-! pattern (intent = er_du, sted ?, type = spm)
+! pattern (intent = er_du, emne ?, type = spm)
 {
   > er du {emne}
   > er du %stedord

@@ -75,6 +75,41 @@ LIMIT 5
 : Skal vi ikke hellere tage en bajer.
 
 
+#### HAR DU BESØGT ####
+
+
+>> har_du_besøgt (emne)
+# Lookup any RDF data available
+! repeatable
+! call RDF.Query("
+SELECT ?navn ?oplevelse ?kommentar ?topic
+WHERE
+{
+  ?subj zp:knownby ?emne.
+  ?subj rdfs:label ?navn.
+  OPTIONAL
+  {
+    ?mening zp:emne ?subj.
+    OPTIONAL { ?mening zp:kommentar ?kommentar. }
+    OPTIONAL { ?mening zp:oplevelse ?oplevelse. }
+  }
+  OPTIONAL { ?subj zp:topic ?topic }
+  FILTER (?emne = lcase(@emne))
+}
+ORDER BY RAND()
+LIMIT 1
+")
+# If the result has a topic associated to it, then try to set that as the current chat topic
+! call RDF.TrySetTopic($_, "topic")
+: <VisRDFBesogt(first(result).navn, first(result).oplevelse, first(result).kommentar)>
+{empty}: Næh!
+#{empty}: Aldrig hørt om <emne>. 
+
+
+# Kan ikke identificere "emne"
+>> har_du_besøgt
+! repeatable
+: Nej. Men ...
 
 #### HVAD XXX YYY ####
 

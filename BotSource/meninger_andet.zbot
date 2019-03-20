@@ -2,6 +2,9 @@
 {
   $: emne: <Oslo>;
     kommentar: "Hvad vil du med Oslo?".
+  
+  $: emne: <Stockholm>;
+    oplevelse: "Jeg besøgte engang STK.".
 
   ### Dyr
 
