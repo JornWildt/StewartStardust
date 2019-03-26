@@ -17,6 +17,8 @@
 {
   > %hilsen
   > %hilsen {navn}
+  > %hilsen du
+  > %hilsen du der
 }
 
 ! pattern (intent = farvel, type = udråb)
@@ -81,7 +83,8 @@
   > sig noget sjovt
   > fortæl en %joke
   > giver du en %joke
-  > kan du en vittighed
+  > kan du en %joke
+  > kan du nogle %joke
 }
 
 ! pattern (intent = kendt_ord)

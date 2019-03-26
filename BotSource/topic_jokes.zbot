@@ -24,3 +24,31 @@
   T> Ja, og så var der drengen der gik til købmanden for at købe kondomer. "Ska' du have en pose til?" spørger han.
   +: "Nej, så grim er hun sgu heller ikke!"
 }
+
+! topic jokes2
+[
+>> sig_noget_sjovt
+: Javel, ja.
+: Jamen, så okay da.
+! continue
+]
+{
+  T> Engang, efter en tur på bar i Shanghai, stødte jeg ind i en ældre dame på gaden. 
+  +: "Det var da noget af en søgang" sagde hun. 
+  +: Ved du hvad jeg så svarede?
+  +: "Det er da ikke så sært med alle de gamle vrag man møder!".
+
+  T> Skal du have mer, tøsedreng?
+  ! answer
+  {
+    >> ja
+    : Nåh, ja. Så var der dengang jeg lå hos pigen fra Kinagrillen.
+    +: Om natten spurgte jeg hende kælent,
+    +: "Kunne det ikke være rart med en 69'er, pigebarn?"
+    +: Ved du hvad hun svarede?
+    +: "Hvorfor vil du have en forårsrulle med broccoli på denne tid af natten?"
+    +: Haaaa! Her snup en bajer!
+  }  
+
+  T> Okay Pinochio, tid til noget andet.
+}

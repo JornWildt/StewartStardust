@@ -1,5 +1,5 @@
 ﻿>> hjælp
-: Og hvorfor så det? Hvad er der nu galt?
+: Hvad er der nu galt, tøsbarn?
 ! answer
 {
   > *
@@ -7,3 +7,16 @@
   : Slap af - prøv igen. Du skal se - i morgen bliver det hele meget bedre.
 }
 
+>> hjælp
+: Stardust til tjeneste! 
++: En gammel sejler som mig er altid klar.
++: Altså, for det meste.
++: Men altså ikke lige nu! Var der andet?
+
+>> hjælp
+: Javel ja. Kan du ikke selv klokken eller skal du have en vejrudsigt?
+! answer
+{
+  > klokken
+  ! continue with hvad er klokken
+}

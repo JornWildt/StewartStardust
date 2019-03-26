@@ -1,6 +1,9 @@
 ﻿! pipeline start
 ! call DateTime.Details()
 ! set tmp.erMandag = isMonday
+! set tmp.erTirsdag = isTuesday
+! set tmp.erOnsdag = isWednesday
+! set tmp.erTorsdag = isThursday
 ! set tmp.erFredag = isFriday
 ! set tmp.erWeekend = isWeekend
 ! set tmp.erMorgen = isMorning

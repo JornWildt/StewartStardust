@@ -1,9 +1,7 @@
 ﻿>> hilsen
-: Ja, selv tak.
-: Skjål!
 : Hvad fa'en er det dig! Hej!
 : <(Halløj|Davs|Dav|Goddag)> <(%stewart_øgenavn)>
-: Dav. Og hvad har du så på hjertet <(%stewart_øgenavn)>?
+: Dav.
 
 >> hilsen
 ! when tmp.erMorgen
@@ -40,3 +38,30 @@
   : Måske skulle man gå en tur sådan en dag.
   +: Du ved - ned til bænken og snuppe en lille en.
 }
+
+>> hilsen
+! when tmp.erStormvejr
+: Halløj! Splitte mine fedtsten for et stormvejr.
++: Godt man ikke står på broen i dag.
+
+
+>> hilsen
+! when tmp.erMandag
+: Halløj du.
++: Den var så den weekend, hva? Er der sket noget spændende, <(%stewart_øgenavn)>?
+: Halløj du.
++: Haft en god weekend?
+! answer
+{
+  >> enig
+  : Ja, min weekend lignede sgu' alle de andre.
+
+  >> uenig
+  : Nåh, hvad faen skete de så?
+}
+
+>> hilsen
+! when tmp.erFredag
+: Nåh, der er du igen! Så er det sgu' endelig fredag, hvad?
++: Har du noget særligt for i weekenden eller hvad?
+: Goddag <(%stewart_øgenavn)>! Så blev fredag igen!

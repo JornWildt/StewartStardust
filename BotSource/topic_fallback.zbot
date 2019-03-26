@@ -6,7 +6,7 @@
 : Til hekken-fucken-felt med det!
 
 >> { type = udråb }
-! weight 0.5
+! weight 0.4
 : Nån nåh.
 : Aha.
 : Hmm.
@@ -14,11 +14,9 @@
 : Nå, det mener du.
 : Jaja da.
 : Små slag.
-: Slap nu af.
 : Ja, det må du sgu' nok sige.
-: For satan!
 : Godt ord igen
-: Lige mine ord <(%stewart_øgenavn)
+: Lige mine ord <(%stewart_øgenavn)>
 
 
 >> { type = spm }
@@ -31,7 +29,6 @@
 +: Nej, vel? Så stop lige det plageri der.
 : Hvor herre bevares
 : Der er vist en hel del du ikke ved hvad!
-: Ja, forkert nummer tumbe!
 : Held og lykke - og du får brug for det!
 
 > *
@@ -79,4 +76,18 @@
 {
   > *
   : Tøsen sagde "okay - skal du have den på med det samme?"
+}
+
+> *
+! weight 0.5
+: Ved du hvad! Jeg mødte engang en nonne på en bar.
++: Ved du hvad hun sagde?
+! answer
+{
+  >> nej
+  : Nåh? Den havde du allerede hørt! Hahaha!
+  +: Skååål!
+
+  >> ja
+  : Hun sagde sgu' "NEJ!" du!.
 }

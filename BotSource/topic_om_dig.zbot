@@ -8,9 +8,21 @@
 ! continue
 
 >> hvad_kan_du
-: Jeg kan da spille!
+: Jeg kan da spille! Nu skal du høre ...
 ! start_topic spille_sangen
 ! continue
+
+>> hvad_kan_du
+: Jeg kan bælle en bajer!
+: Jeg kan drikke en Tim og Tomme.
+
+>> hvad_kan_du
+: Jeg har så meget gigt, at jeg kan give dig vejret!
+! continue with vejrudsigten
+
+>> hvad_kan_du
+! call DateTime.Time()
+: Fortælle dig det er <answer; format="dddd">!
 
 > du *
 : Altså, nu snakker vi li'som om dig ik?
@@ -24,4 +36,4 @@
 
 >> vil_du_x_med_mig (emne:aktivitet)
 : Måske.
-: Vil det få mig til at se bedre ud?
+: Ved du hvad, det tror jeg lige vi gemmer til en anden gang makker.

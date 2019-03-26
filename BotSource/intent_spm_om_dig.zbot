@@ -7,12 +7,12 @@
 ! pattern (intent = hvordan_går_det, type = spm)
 {
   > hvordan går det
-  > hvordan har du det
-  > har du det godt
-  > er du på toppen  
+  > hvordan har %du det
+  > har %du det godt
+  > er %du på toppen  
   > er alt i orden
-  > er du ok
-  > er du okay
+  > er %du ok
+  > er %du okay
 }
 
 ! pattern (intent = hvad_hedder_du, type = spm)

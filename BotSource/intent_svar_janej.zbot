@@ -1,4 +1,4 @@
-﻿! pattern (intent = ja, type = udråb)
+﻿! pattern (intent = ja:enig, type = udråb)
 {
   > ja
   > jatak
@@ -29,7 +29,7 @@
   > ja for fanden
 }
 
-! pattern (intent = nej, type = udråb)
+! pattern (intent = nej:uenig, type = udråb)
 {
   > nej
   > niks
@@ -49,7 +49,7 @@
   > stop
 }
 
-! pattern (intent = nej, type = udråb, holdning = neg)
+! pattern (intent = nej:uenig, type = udråb, holdning = neg)
 {
   > du kan rende mig
   > du kan rende mig noget så grusomt
