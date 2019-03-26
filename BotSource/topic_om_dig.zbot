@@ -1,4 +1,16 @@
-﻿>> du_gentager_dig_selv
+﻿>> hvordan_går_det
+: Tak, jeg klarer mig. Hvad med dig selv?
+
+>> hvad_hedder_du
+: Stewart!
+: Stardust!
+: Stewart Stardust - gøgler af verden!
+
+>> hvad_laver_du
+: Bæller en bajer.
+: Passer min pølsevogn.
+
+>> du_gentager_dig_selv
 : Og hvad så! Skal du være fræk?
 : Nåh, der kan man bare se.
 +: Det minder mig om at det er tid til en porter.
