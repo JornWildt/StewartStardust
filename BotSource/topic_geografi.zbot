@@ -29,7 +29,7 @@
 }
 
 
-! pattern (intent = hvor_er, type = spm)
+! pattern (intent = hvor_er, type = spm, emne ?)
 {
   > hvor ligger {emne}
   > hvor ligger {emne} henne

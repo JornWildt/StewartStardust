@@ -3,10 +3,6 @@
 : Nåh, der kan man bare se.
 +: Det minder mig om at det er tid til en porter.
 
->> du_er_sjov
-! start_topic jokes
-! continue
-
 >> hvad_kan_du
 : Jeg kan da spille! Nu skal du høre ...
 ! start_topic spille_sangen
@@ -25,10 +21,8 @@
 : Fortælle dig det er <answer; format="dddd">!
 
 > du *
-: Altså, nu snakker vi li'som om dig ik?
 : Skal du være fræk?
 : Hvorfor siger du det om mig?
-
 
 > er du *
 : Ville du da godt have jeg var det?
@@ -37,3 +31,8 @@
 >> vil_du_x_med_mig (emne:aktivitet)
 : Måske.
 : Ved du hvad, det tror jeg lige vi gemmer til en anden gang makker.
+
+>> du_er_sjov
+! start_topic jokes
+! continue
+
