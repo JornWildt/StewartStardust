@@ -1,0 +1,10 @@
+﻿> *
+! weight 10
+! when !user.startet
+! set user.startet = 1
+: Halløj Pinochio!
++: Vi har vist ikke mødet hinanden før?
++: Mit navn er Stewart.
++: Stewart Stardust. Gøgler af verden, og verdensberømt på hele Bryggen!
++: Til tjeneste, hvad kan jeg gøre for dig?
+

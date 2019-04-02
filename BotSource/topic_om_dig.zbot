@@ -1,14 +1,60 @@
 ﻿>> hvordan_går_det
 : Tak, jeg klarer mig. Hvad med dig selv?
 
+>> hvordan_går_det
+: Fint tak. Jeg skulle lige til at synge "pik"!
+! answer
+{
+  >> { type = spm }
+  : Ja, du kender vel godt spillesangen? Hør her ...
+  ! start_topic spille_sangen
+  ! continue
+}
+
+>> hvordan_går_det
+: Tak, fint du.
++: Jeg har lige stillet fodderbrædtet på plads.
++: Du ved, min pølsevogn!
+! start_topic polsevogn_joke
+! continue
+
+>> hvordan_går_det
+: Tak, fint du.
++: Hvad laver sådan en spirrevip som dig i dag?
+
 >> hvad_hedder_du
 : Stewart!
 : Stardust!
 : Stewart Stardust - gøgler af verden!
 
 >> hvad_laver_du
-: Bæller en bajer.
-: Passer min pølsevogn.
+! when tmp.erNat
+: Ja, hvad tror du Pinochio? Det er midt om natten. Prøver på at sove.
+
+>> hvad_laver_du
+! when tmp.erMandag AND !tmp.erNat
+: I dag er det mandag, så skal jeg til Fransk.
++: Nej, det gas du! - Jeg skal på havnen og have en bajer.
+
+>> hvad_laver_du
+! when tmp.erOnsdag AND !tmp.erNat
+: Lad mig se? Onsdag? Så er det sgu' tid til ... nåh ja, nej, jeg bruger jo ikke det lort.
+
+>> hvad_laver_du
+! when tmp.erTorsdag AND !tmp.erNat
+: Joh, ser du. Om torsdagen passer jeg børnetelefonen.
+
+>> hvad_laver_du
+! when tmp.erFredag AND !tmp.erNat
+: Hva' satan! Det sgu' fredag! Så er det tid til en porter.
+
+>> hvad_laver_du
+! when tmp.erWeekend AND !tmp.erNat
+: Det er sgu' weekend du! Hvad tror du?
+
+>> hvad_laver_du
+! when !tmp.erNat
+: Slår på tæven, gør jeg sgu. Skal du ha' ommøbleret gebisset?
 
 >> du_gentager_dig_selv
 : Og hvad så! Skal du være fræk?
@@ -31,6 +77,17 @@
 >> hvad_kan_du
 ! call DateTime.Time()
 : Fortælle dig det er <answer; format="dddd">!
+
+>> hvad_kan_du
+: Jeg kan sgu da en vittighed. Vil du høre en?
+! answer
+{
+  >> ja
+  ! continue with sig noget sjovt
+
+  >> nej
+  : Jamen, så okay da.
+}
 
 > du *
 : Skal du være fræk?
