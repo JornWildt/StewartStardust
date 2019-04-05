@@ -1,5 +1,6 @@
 ﻿VisRDFOplysning(erJaNej, navn, baggrund, kommentar, typeNavn, typeBeskriver, typeKommentar) ::= <<
 <if(baggrund)><baggrund><endif>
+
 +<if(kommentar)><kommentar>
 <elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
 <elseif(typeKommentar)><typeKommentar>
