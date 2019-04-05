@@ -7,7 +7,7 @@
 # Lookup any RDF data available
 ! repeatable
 ! call RDF.Query("
-SELECT ?navn ?kommentar ?typeNavn ?typeBeskriver ?typeKommentar ?topic
+SELECT ?navn ?baggrund ?kommentar ?typeNavn ?typeBeskriver ?typeKommentar ?topic
 WHERE
 {
   ?subj zp:knownby ?emne.
@@ -15,7 +15,14 @@ WHERE
   OPTIONAL
   {
     ?mening zp:emne ?subj.
-    ?mening zp:kommentar ?kommentar.
+    OPTIONAL
+    {
+      ?mening zp:kommentar ?kommentar.
+    }
+    OPTIONAL
+    {
+      ?mening zp:baggrund ?baggrund.
+    }
   }
   OPTIONAL { ?subj rdf:type ?type. }
   OPTIONAL { ?type rdfs:label ?typeNavn}
@@ -33,7 +40,7 @@ LIMIT 1
 ")
 # If the result has a topic associated to it, then try to set that as the current chat topic
 ! call RDF.TrySetTopic($_, "topic")
-: <VisRDFOplysning(erJaNej, first(result).navn, first(result).kommentar, first(result).typeNavn, first(result).typeBeskriver, first(result).typeKommentar)>
+: <VisRDFOplysning(erJaNej, first(result).navn, first(result).baggrund, first(result).kommentar, first(result).typeNavn, first(result).typeBeskriver, first(result).typeKommentar)>
 {empty}: Hvad fanden ved jeg om <emne>!
 #{empty}: Aldrig hørt om <emne>. 
 

@@ -1,0 +1,21 @@
+﻿! topic ludo
+{
+  T> Jeg starter ...
+  +: Det blev en sekser! Så rykker jeg ud og får en tur igen.
+  +: To'er - din tur.
+
+  T> Godt slået Pinochio. Min tur ...
+  +: Neeej, se der. En sekser igen!
+  +: Så rykker jeg en brik mere ud og slår igen.
+  +: Fire ... så lander jeg på stjernen og må rykke frem til næste stjerne. Sådan!
+
+  T> Og så slår jeg en femmer. De betyder jeg slår dig hjem.
+  +: SMASK! En på gummerne du!
+  +: Din tur.
+
+  T> Nej, det var fanme ærgerligt du. Den tæller ikke.
+  +: Sådan! Jeg slog seks igen og rykker de sidste to ud.
+  +: Og fordi jeg er ældst, rykker jeg så de to første i mål. Yessir!
+
+  T> Gæjm åver du! Jeg slog de sidste brikke hjem. Du tabte.
+}

@@ -1,11 +1,12 @@
-﻿VisRDFOplysning(erJaNej, navn, kommentar, typeNavn, typeBeskriver, typeKommentar) ::= <%
-<if(kommentar)><kommentar>
+﻿VisRDFOplysning(erJaNej, navn, baggrund, kommentar, typeNavn, typeBeskriver, typeKommentar) ::= <<
+<if(baggrund)><baggrund><endif>
++<if(kommentar)><kommentar>
 <elseif(erJaNej)>Selvfølgelig ved jeg hvad <navn> er!
 <elseif(typeKommentar)><typeKommentar>
 <elseif(typeBeskriver)><navn> <typeBeskriver>
 <else>Hvad?
 <endif>
-%>
+>>
 
 
 VisRDFBesogt(navn, oplevelse, kommentar) ::= <%

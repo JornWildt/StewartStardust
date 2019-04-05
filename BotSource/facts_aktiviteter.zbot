@@ -3,4 +3,7 @@
   gifte (gifter, giftede, gift, giftes):.
   "gå i byen" ("går i byen", "gik i byen", "tag i byen", "tage i byen"):.
   "gå på bar" ("går på bar", "gik på bar", "tag på bar", "tage på bar"):.
+  "spille bold":.
+  "spille ludo":
+    topic: "ludo".
 }

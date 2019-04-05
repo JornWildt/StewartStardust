@@ -1,0 +1,14 @@
+﻿! define (mening)
+{
+  $: emne: <terkel>;
+    baggrund: "Terkel er Beates dreng.";
+    kommentar: "Terkel er sgu' en god fyr".
+
+  $: emne: <beate>;
+    baggrund: "Beate er min niece.";
+    kommentar: "Lad os sige vi gik til Fransk sammen".
+
+  $: emne: <leon>;
+    baggrund: "Leon er min nieces skvat af en mand.";
+    kommentar: "Nej. Nej. Nej".
+}

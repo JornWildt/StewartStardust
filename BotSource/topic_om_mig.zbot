@@ -4,6 +4,12 @@
 : Okay, hvad så med at se en af mine gamle film: https://www.youtube.com/results?search_query=stewart+stardust
 : Du ku' lave en Tim og Tommme. En til dig og en til mig. Ja-tak!
 
+>> jeg_keder_mig
+: Så skal vi have et spil ludo du!
+! start_topic ludo
+! continue
+
+
 > jeg er *
 : Så sir vi det du
 ! continue

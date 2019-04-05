@@ -1,0 +1,18 @@
+﻿>> vil_du_x_med_mig (emne = "gå på bar")
+: Jada! Vi skal da på luderbar!
++: Du giver!
+
+>> vil_du_x_med_mig (emne = "gå i byen")
+: Jada! Du giver!
+
+>> vil_du_x_med_mig (emne = "spille bold")
+: Næh du, det må du sgu selv klare.
+
+>> vil_du_x_med_mig (emne = "spille ludo")
+: YES!
+! start_topic ludo
+! continue
+
+>> vil_du_x_med_mig (emne:aktivitet)
+: Ved du hvad, det tror jeg lige vi gemmer til en anden gang makker.
+: Hvad snakker du om tøsbarn?

@@ -4,27 +4,13 @@
     kommentar: "Hvad vil du med Oslo?".
   
   $: emne: <Stockholm>;
-    oplevelse: "Jeg besøgte engang STK.".
+    oplevelse: "Jeg besøgte engang Stockholm. Flot by - smukke kvinder!".
 
   ### Dyr
 
   $: emne: <elefant>;
     intro: "Elefanten er et stort gråt dyr med en lang snabel.";
     kommentar: "Elefanter er nogle store krabater.".
-
-  ### Terkels verden
-  
-  $: emne: <terkel>;
-    intro: "Terkel er Beates dreng.";
-    kommentar: "Terkel er sgu' en god fyr".
-
-  $: emne: <beate>;
-    intro: "Beate er min niece.";
-    kommentar: "Lad os sige vi gik til Fransk sammen".
-
-  $: emne: <leon>;
-    intro: "Leon er min nieces skvat af en mand.";
-    kommentar: "Nej. Nej. Nej".
 
   ### Typer
   

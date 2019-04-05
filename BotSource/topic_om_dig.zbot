@@ -75,6 +75,11 @@
 ! continue with vejrudsigten
 
 >> hvad_kan_du
+: Vi kan da tage et spil Ludo!
+! start_topic ludo
+! continue
+
+>> hvad_kan_du
 ! call DateTime.Time()
 : Fortælle dig det er <answer; format="dddd">!
 
@@ -96,10 +101,6 @@
 > er du *
 : Ville du da godt have jeg var det?
 +: Det kan du kraftedme godt glemme.
-
->> vil_du_x_med_mig (emne:aktivitet)
-: Måske.
-: Ved du hvad, det tror jeg lige vi gemmer til en anden gang makker.
 
 >> du_er_sjov
 ! start_topic jokes
